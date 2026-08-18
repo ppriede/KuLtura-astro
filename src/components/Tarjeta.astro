@@ -1,0 +1,42 @@
+---
+import { CAT_LABELS, formatFecha } from "../lib/shared.js";
+
+interface Props {
+  id: string;
+  titulo: string;
+  categoria: string;
+  fecha: string;
+  autor: string;
+  portada: string;
+  resumen: string;
+  ocultar_autor: string;
+}
+
+const { id, titulo, categoria, fecha, autor, portada, resumen, ocultar_autor } =
+  Astro.props;
+const columna = categoria === "columnas";
+const autorVisible = String(ocultar_autor) === "false";
+---
+
+<article class="tarjeta">
+  <a
+    class="chip chip-foto"
+    href={`/?categoria=${encodeURIComponent(categoria)}`}
+  >
+    {CAT_LABELS[categoria] ?? categoria}
+  </a>
+  <a class="tarjeta-link" href={`/articulo/${id}/`}>
+    <figure class="tarjeta-foto">
+      <img src={`/${portada}`} alt={titulo} width="800" height="600" loading="lazy" />
+      {columna && <span class="tarjeta-badge" aria-hidden="true">✍️</span>}
+    </figure>
+    <div class="tarjeta-cuerpo">
+      <div class="tarjeta-meta">
+        <time datetime={fecha}>{formatFecha(fecha)}</time>
+      </div>
+      <h2 class="tarjeta-titulo">{titulo}</h2>
+      {resumen && <p class="tarjeta-resumen">{resumen}</p>}
+      {autorVisible && <p class="tarjeta-autor">Por {autor}</p>}
+    </div>
+  </a>
+</article>

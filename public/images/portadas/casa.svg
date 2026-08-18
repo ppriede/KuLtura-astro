@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="La casa en la lluvia — placeholder">
+  <rect width="800" height="600" fill="#b9b4aa"/>
+  <path d="M0 600 L0 350 Q400 300 800 350 L800 600 Z" fill="#8b877d"/>
+  <line x1="120" y1="160" x2="120" y2="360" stroke="#8b877d" stroke-width="14"/>
+  <line x1="120" y1="160" x2="120" y2="360" stroke="#6e6a61" stroke-width="4" stroke-dasharray="30 18"/>
+  <path d="M300 420 L300 200 L430 90 L560 200 L560 420 Z" fill="#4a473f"/>
+  <rect x="400" y="290" width="70" height="130" fill="#d8d3ca"/>
+  <rect x="330" y="250" width="45" height="45" fill="#d8d3ca"/>
+  <rect x="500" y="250" width="45" height="45" fill="#d8d3ca"/>
+</svg>

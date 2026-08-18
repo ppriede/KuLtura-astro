@@ -1,0 +1,52 @@
+---
+import Base from "../../layouts/Base.astro";
+import { getCollection, render } from "astro:content";
+import { CAT_LABELS, formatFecha } from "../../lib/shared.js";
+
+export async function getStaticPaths() {
+  const articulos = (await getCollection("articulos")).filter(
+    (a) => a.data.estado !== "archivado" && a.data.estado !== "borrador"
+  );
+  return articulos.map((a) => ({
+    params: { slug: a.id },
+    props: { articulo: a },
+  }));
+}
+
+const { articulo } = Astro.props;
+const { titulo, categoria, fecha, autor, portada, resumen, ocultar_portada, ocultar_resumen, ocultar_autor } = articulo.data;
+const { Content } = await render(articulo);
+const autorVisible = String(ocultar_autor) === "false";
+const portadaVisible = String(ocultar_portada) !== "true";
+const resumenVisible = String(ocultar_resumen) !== "true" && resumen;
+---
+
+<Base
+  titulo={`${titulo} — KuLtura.cl`}
+  descripcion={resumenVisible ? resumen : `Artículo en KuLtura.cl: ${titulo}`}
+>
+  <main>
+    <article class="articulo">
+      <header class="articulo-cabecera">
+        <div class="tarjeta-meta">
+          <a class="chip" href={`/?categoria=${encodeURIComponent(categoria)}`}>
+            {CAT_LABELS[categoria] ?? categoria}
+          </a>
+          <time datetime={fecha}>{formatFecha(fecha)}</time>
+        </div>
+        <h1 class="articulo-titulo">{titulo}</h1>
+        {resumenVisible && <p class="articulo-resumen">{resumen}</p>}
+        {autorVisible && <p class="articulo-autor">Por {autor}</p>}
+      </header>
+      {portadaVisible && (
+        <figure class="articulo-foto">
+          <img src={`/${portada}`} alt={titulo} width="800" height="600" fetchpriority="high" />
+        </figure>
+      )}
+      <div class="articulo-cuerpo">
+        <Content />
+      </div>
+      <a class="volver" href="/">← Volver a la portada</a>
+    </article>
+  </main>
+</Base>

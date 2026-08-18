@@ -1,0 +1,67 @@
+---
+import Base from "../layouts/Base.astro";
+import Tarjeta from "../components/Tarjeta.astro";
+import { getCollection } from "astro:content";
+import { CAT_LABELS, CAT_ORDER } from "../lib/shared.js";
+
+const articulos = (await getCollection("articulos"))
+  .filter((a) => a.data.estado === "publico")
+  .sort((a, b) => b.data.fecha.localeCompare(a.data.fecha));
+
+const catActual = Astro.url.searchParams.get("categoria");
+const visibles = catActual
+  ? articulos.filter((a) => a.data.categoria === catActual)
+  : articulos;
+const presentes = CAT_ORDER.filter((c) =>
+  articulos.some((a) => a.data.categoria === c)
+);
+---
+
+<Base
+  titulo="KuLtura.cl — Portal de Cultura"
+  descripcion="KuLtura.cl — fotografía, música, arte y literatura. Últimos lanzamientos, conciertos y columnas de opinión."
+>
+  <nav class="filtros" aria-label="Filtrar por categoría">
+    <a class="filtro" href="/" aria-current={!catActual ? "true" : undefined}>
+      Todo
+    </a>
+    {
+      presentes.map((c) => (
+        <a
+          class="filtro"
+          href={`/?categoria=${encodeURIComponent(c)}`}
+          aria-current={catActual === c ? "true" : undefined}
+        >
+          {CAT_LABELS[c]}
+        </a>
+      ))
+    }
+  </nav>
+
+  <main>
+    <h1 class="sr-only">Portada de KuLtura.cl</h1>
+    <section class="grid" aria-label="Artículos">
+      {
+        visibles.length === 0 ? (
+          <div class="estado">
+            <h2>Sin artículos</h2>
+            <p>No hay artículos en esta categoría todavía.</p>
+          </div>
+        ) : (
+          visibles.map((a) => (
+            <Tarjeta
+              id={a.id}
+              titulo={a.data.titulo}
+              categoria={a.data.categoria}
+              fecha={a.data.fecha}
+              autor={a.data.autor}
+              portada={a.data.portada}
+              resumen={a.data.resumen}
+              ocultar_autor={a.data.ocultar_autor}
+            />
+          ))
+        )
+      }
+    </section>
+  </main>
+</Base>

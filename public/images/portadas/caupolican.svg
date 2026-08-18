@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Concierto — placeholder">
+  <rect width="800" height="600" fill="#141312"/>
+  <circle cx="400" cy="300" r="150" fill="#8c1f1f"/>
+  <circle cx="400" cy="300" r="150" fill="none" stroke="#3d3a38" stroke-width="60"/>
+  <circle cx="400" cy="300" r="95" fill="#0d0c0c"/>
+  <line x1="0" y1="520" x2="800" y2="520" stroke="#3d3a38" stroke-width="4"/>
+</svg>

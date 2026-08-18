@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Vinilos — placeholder">
+  <rect width="800" height="600" fill="#1d1c1a"/>
+  <g transform="rotate(-18 400 300)">
+    <circle cx="400" cy="300" r="200" fill="#0e0d0d"/>
+    <circle cx="400" cy="300" r="200" fill="none" stroke="#33302c" stroke-width="10"/>
+    <circle cx="400" cy="300" r="150" fill="none" stroke="#33302c" stroke-width="4"/>
+    <circle cx="400" cy="300" r="100" fill="none" stroke="#33302c" stroke-width="4"/>
+    <circle cx="400" cy="300" r="45" fill="#b8b2a6"/>
+    <circle cx="400" cy="300" r="6" fill="#1d1c1a"/>
+  </g>
+</svg>

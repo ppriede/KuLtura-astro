@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Cerros de Valparaíso — placeholder">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#d9d4cc"/>
+      <stop offset="1" stop-color="#6b6660"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#g)"/>
+  <circle cx="600" cy="140" r="60" fill="#f4f1ea" opacity="0.9"/>
+  <path d="M0 600 L0 420 L160 280 L340 430 L520 300 L700 450 L800 380 L800 600 Z" fill="#2e2b28"/>
+  <path d="M0 600 L0 500 L180 380 L380 520 L620 360 L800 520 L800 600 Z" fill="#1c1a18"/>
+</svg>

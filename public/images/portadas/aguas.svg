@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Aguas del sur — placeholder">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8a8f94"/>
+      <stop offset="1" stop-color="#2f3337"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#g)"/>
+  <path d="M0 330 Q120 300 240 330 T480 330 T720 330 L800 330 L800 600 L0 600 Z" fill="#17191b"/>
+  <path d="M0 380 Q120 350 240 380 T480 380 T720 380 L800 380 L800 600 L0 600 Z" fill="#232629"/>
+  <line x1="0" y1="190" x2="800" y2="190" stroke="#d8d3ca" stroke-width="3" opacity="0.7"/>
+  <line x1="0" y1="215" x2="800" y2="215" stroke="#d8d3ca" stroke-width="3" opacity="0.4"/>
+</svg>

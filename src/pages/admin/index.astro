@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>KuLtura — Admin</title>
+  <!-- sin esto, Decap resuelve config.yml relativo a la URL de la página y /admin (sin slash) rompe -->
+  <link rel="cms-config-url" type="text/yaml" href="/admin/config.yml" />
+</head>
+<body>
+  <script is:inline src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+  <script is:inline>
+    // Editor component para embeds @youtube <URL> (espejo de src/remark-youtube.mjs)
+    CMS.registerEditorComponent({
+      id: "youtube",
+      label: "YouTube",
+      fields: [{ name: "url", label: "URL de YouTube", widget: "string" }],
+      pattern: /^@youtube\s+(.+)$/,
+      fromBlock(match) {
+        // tolera URL cruda o [texto](url) si el editor la auto-linkeó
+        const rest = match[1].trim();
+        return { url: rest.match(/\((.*?)\)/)?.[1] ?? rest };
+      },
+      toBlock(obj) {
+        return `@youtube ${obj.url.trim()}`;
+      },
+      toPreview(obj) {
+        // mismo regex que YT_ID_RE en src/remark-youtube.mjs
+        const id = obj.url.match(/(?:v=|youtu\.be\/|shorts\/|embed\/|live\/)([\w-]{11})/)?.[1];
+        return id
+          ? `<img src="https://i.ytimg.com/vi/${id}/hqdefault.jpg" alt="Video de YouTube" style="max-width: 100%" />`
+          : "<p>URL de YouTube no reconocida</p>";
+      },
+    });
+  </script>
+</body>
+</html>

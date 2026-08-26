@@ -3,7 +3,7 @@
 Fork de KuLtura.cl (repo original: `ppriede/KuLtura.cl`, admin propio Express).
 Este repo: https://github.com/ppriede/KuLtura-astro — sitio estático Astro + Decap CMS.
 
-**Estado: Fases 1 y 2 COMPLETAS. Fases 3 y 4 pendientes.**
+**Estado: Fases 1, 2 y 3 COMPLETAS. Fase 4 pendiente.**
 
 ---
 
@@ -17,7 +17,7 @@ Este repo: https://github.com/ppriede/KuLtura-astro — sitio estático Astro + 
 
 ---
 
-## Hecho (Fases 1-2)
+## Hecho (Fases 1-3)
 
 ### Estructura
 
@@ -33,7 +33,29 @@ src/
   remark-youtube.mjs         # plugin remark: párrafo "@youtube URL" -> iframe youtube-nocookie (exporta YT_ID_RE)
   styles/global.css          # CSS portado del original (se eliminó: esqueleto, pulso, reintentar — no aplican en estático)
 public/images/               # logo.png + images/portadas/* (copiadas del repo original)
+public/admin/config.yml      # Decap CMS (Fase 3): backend github + colección espejo del schema
+src/pages/admin/index.astro  # página admin de Decap (CDN + editor component YouTube, scripts is:inline)
 tests/                       # node --test: fecha.test.js, youtube.test.js (2/2)
+```
+
+### Decap CMS (Fase 3)
+
+- `src/pages/admin/index.astro`: SPA de Decap desde CDN (`unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js`),
+  sin React UMD propio (el bundle completo incluye todo). Editor component "YouTube" registrado inline.
+  **Va como página en src/pages, NO en public/**: Astro 6 dev no sirve el directory index de public/
+  (`/admin/` daba 404). **Ambos scripts llevan `is:inline`** — sin eso Astro empaqueta los scripts
+  en módulos `/_astro/*` y el CDN de Decap se rompe.
+- `public/admin/config.yml`: backend github (`ppriede/KuLtura-astro`, `main`), `media_folder: public/images/portadas`,
+  `public_folder: /images/portadas`, colección `articulos` espejo del schema Zod (fecha date-only
+  `YYYY-MM-DD`, portada image con `choose_url`, estado select con default publico, 3 booleans ocultar_*).
+- **Editor component YouTube**: `pattern /^@youtube\s+(.+)$/`, `fromBlock` tolera URL cruda o `[texto](url)`
+  (el editor auto-linkea URLs), `toBlock` serializa `@youtube URL`, `toPreview` muestra miniatura
+  i.ytimg.com. El regex de ID está duplicado inline (espejo de `YT_ID_RE`) — no se puede importar el
+  .mjs de `src/` porque es ESM fuera de public/.
+- **Prueba local sin OAuth**: `npx decap-server` (proxies git local, puerto 8081) + `npm run dev`
+  → abrir `/admin/`. `local_backend: true` en config.yml.
+- Los .md viven en `src/content/articulos/` (folder de la colección) mientras media sube a
+  `public/images/portadas/` — carpetas distintas, Decap commitea ambas.
 ```
 
 ### Schema Zod (`src/content.config.ts`)
@@ -74,25 +96,6 @@ default publico), `ocultar_portada`, `ocultar_resumen`, `ocultar_autor` (coerce 
 ---
 
 ## Pendiente
-
-### Fase 3 — Decap CMS
-
-1. `public/admin/index.html` (SPA de Decap, CDN: `decap-cms-app` + netlify-identity opcional)
-   y `public/admin/config.yml`:
-   - `backend: github`, repo `ppriede/KuLtura-astro`, branch `main`
-   - `media_folder: public/images/portadas`, `public_folder: /images/portadas`
-   - Colección `articulos` espejo del schema Zod: titulo (string), categoria (select),
-     fecha (datetime), autor (string), portada (image con `choose_url` para pegar URL de
-     i.ytimg.com), resumen (text opcional), estado (select con los 4), 3 booleans ocultar_*
-   - `local_backend: true` para probar en dev sin OAuth
-2. **Editor component "YouTube"** (`CMS.registerEditorComponent`) para el cuerpo markdown:
-   - `pattern` compatible con `@youtube <URL>` (usar `YT_ID_RE` exportado de remark-youtube.mjs)
-   - `fromBlock` re-detecta el bloque al reabrir; `toBlock` serializa `@youtube URL`;
-     `toPreview` muestra miniatura/iframe
-   - Referencia oficial: decapcms.org/docs/hugo (ejemplo shortcode gist)
-3. Nota: los archivos .md viven en `src/content/articulos/` — Decap media_folder apunta a
-   `public/`, pero la colección escribe en `src/content/` (carpetas distintas, ambos dentro
-   del repo; Decap commitea ambos).
 
 ### Fase 4 — OAuth y deploy automático
 
@@ -146,5 +149,5 @@ npm test         # node --test (2 tests)
 npx serve dist   # previsualizar el build
 ```
 
-Próximo paso sugerido: Fase 3 (Decap) — no depende de la OAuth App para arrancar con
-`local_backend: true`.
+Próximo paso sugerido: Fase 4 (OAuth + Cloudflare Pages) — requiere acciones manuales del usuario
+(GitHub OAuth App, cuenta de CF).

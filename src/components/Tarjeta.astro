@@ -9,13 +9,15 @@ interface Props {
   autor: string;
   portada: string;
   resumen: string;
+  ocultar_resumen: string;
   ocultar_autor: string;
 }
 
-const { id, titulo, categoria, fecha, autor, portada, resumen, ocultar_autor } =
+const { id, titulo, categoria, fecha, autor, portada, resumen, ocultar_resumen, ocultar_autor } =
   Astro.props;
 const columna = categoria === "columnas";
 const autorVisible = String(ocultar_autor) === "false";
+const resumenVisible = String(ocultar_resumen) !== "true" && resumen;
 ---
 
 <article class="tarjeta">
@@ -35,7 +37,7 @@ const autorVisible = String(ocultar_autor) === "false";
         <time datetime={fecha}>{formatFecha(fecha)}</time>
       </div>
       <h2 class="tarjeta-titulo">{titulo}</h2>
-      {resumen && <p class="tarjeta-resumen">{resumen}</p>}
+      {resumenVisible && <p class="tarjeta-resumen">{resumen}</p>}
       {autorVisible && <p class="tarjeta-autor">Por {autor}</p>}
     </div>
   </a>

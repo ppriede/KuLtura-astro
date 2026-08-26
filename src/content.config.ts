@@ -13,7 +13,10 @@ const articulos = defineCollection({
       .transform((v) => (typeof v === "string" ? v : v.toISOString().slice(0, 10))),
     autor: z.string(),
     portada: z.string(),
-    resumen: z.coerce.string().default(""),
+    // YAML `resumen:` vacío es null → coerce lo volvía "null"; normalizar a ""
+    resumen: z
+      .preprocess((v) => (v == null ? "" : v), z.coerce.string())
+      .default(""),
     estado: z.enum(["publico", "privado", "archivado", "borrador"]).default("publico"),
     ocultar_portada: z.coerce.string().default("false"),
     ocultar_resumen: z.coerce.string().default("false"),

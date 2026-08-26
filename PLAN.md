@@ -3,7 +3,7 @@
 Fork de KuLtura.cl (repo original: `ppriede/KuLtura.cl`, admin propio Express).
 Este repo: https://github.com/ppriede/KuLtura-astro — sitio estático Astro + Decap CMS.
 
-**Estado: Fases 1, 2 y 3 COMPLETAS. Fase 4 pendiente.**
+**Estado: Fases 1, 2 y 3 COMPLETAS. Mejoras en admin aplicadas. Fase 4 pendiente.**
 
 ---
 
@@ -24,7 +24,7 @@ Este repo: https://github.com/ppriede/KuLtura-astro — sitio estático Astro + 
 ```
 src/
   content.config.ts          # colección "articulos": glob loader + schema Zod
-  content/articulos/*.md     # 9 artículos migrados (frontmatter español idéntico al original)
+  content/articulos/*.md     # 10 artículos migrados (frontmatter español idéntico al original)
   layouts/Base.astro         # head, tema oscuro/claro (localStorage "kultura-tema"), encabezado, pie
   components/Tarjeta.astro   # tarjeta de portada (chip, fecha, resumen, autor condicionales, badge ✍️ columnas)
   pages/index.astro          # portada: grid + filtros como links (?categoria=x), solo estado "publico"
@@ -86,12 +86,19 @@ default publico), `ocultar_portada`, `ocultar_resumen`, `ocultar_autor` (coerce 
 | borrador  | no      | no (404)       |
 | archivado | no      | no (404)       |
 
-### Verificación (todo verde al cierre)
+### Verificación (todo verde)
 
 - `npm test` → 2/2 (fecha sin desfase UTC, regex YT_ID_RE)
-- `npm run build` → dist/ con 9 páginas de artículo + index
-- Smoke sobre `npx serve dist`: 9 tarjetas, iframes correctos, portada oculta respetada,
+- `npm run build` → dist/ con 12 páginas (index + 10 artículos + admin)
+- Smoke sobre `npx serve dist`: 10 tarjetas, iframes correctos, portada oculta respetada,
   autor oculto por defecto, 404 en slug inexistente, fecha "16 de agosto de 2026" (sin correrse)
+
+### Mejoras post-lanzamiento (aplicadas)
+
+- **Orden en admin**: `sortable_fields: [titulo, fecha]` con `sort: "fecha:desc"` en config.yml
+- **Campos booleanos opcionales**: `ocultar_portada`, `ocultar_resumen`, `ocultar_autor` con `required: false`
+- **Título portada**: `KuLtura.cl` (sin subtítulo)
+- **`publicar.ps1` actualizado**: build previo (`npm run build`) + deploy de `dist/` en vez de `public/`
 
 ---
 
@@ -122,6 +129,7 @@ default publico), `ocultar_portada`, `ocultar_resumen`, `ocultar_autor` (coerce 
 - Decidir si mantener la sintaxis `@youtube` o migrar a `{{< youtube ID >}}` estilo Hugo
   (el usuario la conoce; con el editor component ambas son equivalentes)
 - Si se necesita reordenar manual: agregar campo `orden: number` al schema y sort combinado
+- **README.md desactualizado**: no refleja el flujo de publicación ni Fase 4 (pendiente de documentar)
 
 ---
 

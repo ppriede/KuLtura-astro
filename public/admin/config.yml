@@ -2,9 +2,12 @@ backend:
   name: github
   repo: ppriede/KuLtura-astro
   branch: main
+  base_url: https://decap-oauth.ppriede.workers.dev
+  app_id: Ov23litHeGdN0E6yNren
 
-# local: npx decap-server (proxies git local, sin OAuth) + npm run dev → /admin/
-local_backend: true
+# Producción: el worker OAuth redirige a GitHub y vuelve con token
+# Dev local (sin OAuth): npx decap-server + npm run dev (comentar líneas arriba, descomentar abajo)
+# local_backend: true
 
 # espejo de src/content.config.ts — si cambia el schema Zod, cambiar aquí también
 media_folder: public/images/portadas
@@ -41,7 +44,7 @@ collections:
         widget: "select"
         options: ["publico", "privado", "archivado", "borrador"]
         default: "publico"
-      - {label: "Ocultar portada", name: "ocultar_portada", widget: "boolean", default: false}
-      - {label: "Ocultar resumen", name: "ocultar_resumen", widget: "boolean", default: false}
-      - {label: "Ocultar autor", name: "ocultar_autor", widget: "boolean", default: true}
+      - {label: "Ocultar portada", name: "ocultar_portada", widget: "boolean", default: false, required: false}
+      - {label: "Ocultar resumen", name: "ocultar_resumen", widget: "boolean", default: false, required: false}
+      - {label: "Ocultar autor", name: "ocultar_autor", widget: "boolean", default: true, required: false}
       - {label: "Cuerpo", name: "body", widget: "markdown"}

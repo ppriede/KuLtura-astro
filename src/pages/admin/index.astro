@@ -8,6 +8,16 @@
   <link rel="cms-config-url" type="text/yaml" href="/admin/config.yml" />
 </head>
 <body>
+  <script is:inline>
+    // Corregir hash del token OAuth antes de que Decap CMS cargue
+    // Decap usa #/ para su router interno y si el hash llega como #/access_token=...
+    // su parser de autenticación no lo reconoce (espera #access_token=... sin el /)
+    if (window.location.hash.startsWith('#/access_token=')) {
+      window.location.replace(
+        window.location.pathname + window.location.hash.replace('#/', '#')
+      );
+    }
+  </script>
   <script is:inline src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
   <script is:inline>
     // Editor component para embeds @youtube <URL> (espejo de src/remark-youtube.mjs)

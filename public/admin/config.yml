@@ -2,12 +2,14 @@ backend:
   name: github
   repo: ppriede/KuLtura-astro
   branch: main
-  base_url: https://decap-oauth.ppriede.workers.dev
-  app_id: Ov23litHeGdN0E6yNren
+# Producción: descomentar para OAuth con worker (requiere configurar GitHub OAuth y worker)
+# base_url: https://decap-oauth.ppriede.workers.dev
+# app_id: Ov23litHeGdN0E6yNren
 
-# Producción: el worker OAuth redirige a GitHub y vuelve con token
-# Dev local (sin OAuth): npx decap-server + npm run dev (comentar líneas arriba, descomentar abajo)
-# local_backend: true
+# Dev local (recomendado): npx decap-server + npm run dev → /admin/
+# Editas artículos y guardas → Decap commitea al repo local
+# Luego ejecutas publicar.ps1 para push + deploy automático
+local_backend: true
 
 # espejo de src/content.config.ts — si cambia el schema Zod, cambiar aquí también
 media_folder: public/images/portadas

@@ -7,7 +7,6 @@ param(
   [switch]$Deploy,
   [switch]$Force
 )
-[Console]::OutputEncoding = [System.Text.Encoding]::UTF8
 Set-Location $PSScriptRoot
 
 Write-Host ""
@@ -40,7 +39,7 @@ Write-Host "Build OK en dist/." -ForegroundColor Green
 
 # 4. Mensaje del commit
 $mensaje = Read-Host "Mensaje del commit (Enter = actualización de contenido)"
-$mensaje = ($mensaje -replace "[`r`n`x00-`x1F]", " ").Trim()
+$mensaje = $mensaje.Trim()
 if (-not $mensaje) { $mensaje = "actualización de contenido" }
 if ($mensaje.Length -gt 120) { $mensaje = $mensaje.Substring(0, 120).TrimEnd() }
 

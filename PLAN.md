@@ -104,23 +104,17 @@ default publico), `ocultar_portada`, `ocultar_resumen`, `ocultar_autor` (coerce 
 
 ## Pendiente
 
-### Fase 4 — OAuth y deploy automático
+### Fase 4 — OAuth y deploy automático ⏸️ POSPUESTO
 
-1. **Paso manual del usuario** (requiere su cuenta GitHub): crear GitHub OAuth App
-   (Settings → Developer settings → OAuth Apps):
-   - Homepage URL: la URL del sitio en Cloudflare Pages (o http://localhost:6466 en dev)
-   - Authorization callback URL: `https://<sitio>/admin/`
-   - El Client ID se usa en `config.yml` (`backend.github` usa OAuth implícito de Decap)
-   - El Client Secret NO se necesita en Decap (flujo de código OAuth implícito)
-2. Cloudflare Pages:
-   - Conectar repo `ppriede/KuLtura-astro` → build command `npm run build`, output `dist/`
-   - Auto-deploy por commit: al activar "builds on push", cada commit de Decap despliega
-   - `site` en `astro.config.mjs` está en `https://kultura.cl` — ajustar al dominio real del
-     proyecto Pages si es otro
-3. Redirecciones (opcional): los links viejos `articulo.html#id=x` se pueden mapear con
-   `public/_redirects` de CF Pages si se quiere preservar URLs antiguas
-4. Documentar en README (no existe todavía — el usuario pidió PLAN.md, README pendiente):
-   uso local (`npm run dev`), flujo de edición (Decap → commit → deploy), OAuth
+Se intentó configurar OAuth con Cloudflare Worker proxy, pero el login de GitHub OAuth presentó problemas de compatibilidad con Decap CMS fuera de Netlify (redirige a `api.netlify.com/auth`). Se optó por:
+
+- **Decap CMS con `local_backend: true`** (modo local): editar artículos en `http://localhost:4321/admin/` con `npx decap-server` en paralelo
+- **Publicación manual**: `publicar.ps1` (build + commit + push → auto-deploy de Cloudflare Pages)
+- Worker OAuth (`decap-oauth-worker.js`) y configuración relacionada eliminados del repo
+
+Para reactivar:
+1. Buscar solución OAuth alternativa (Sveltia CMS, Netlify, otro proxy)
+2. O configurar correctamente el callback en GitHub OAuth App
 
 ### Abierto (menor)
 

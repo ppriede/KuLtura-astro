@@ -1,9 +1,10 @@
 ﻿# publicar.ps1 — build + commit + sync + deploy de KuLtura-astro (Astro 6)
 # Uso: powershell -ExecutionPolicy Bypass -File publicar.ps1
-#   -SkipDeploy : solo build + commit + push (sin deploy)
-#   -Force      : deploy aunque el build no tenga cambios nuevos
+#   Por defecto: build + commit + push (auto-deploy de Cloudflare Pages)
+#   -Deploy     : además, deploy manual a Cloudflare Pages (útil si el auto-deploy falla)
+#   -Force      : deploy manual aunque no haya cambios en dist/
 param(
-  [switch]$SkipDeploy,
+  [switch]$Deploy,
   [switch]$Force
 )
 [Console]::OutputEncoding = [System.Text.Encoding]::UTF8
@@ -61,7 +62,7 @@ if ($LASTEXITCODE -ne 0) {
 }
 Write-Host "Commit creado." -ForegroundColor Green
 
-# 6. Push
+# 6. Push (gatilla auto-deploy de Cloudflare Pages)
 $rama = git branch --show-current
 git push origin $rama
 if ($LASTEXITCODE -ne 0) {
@@ -69,15 +70,17 @@ if ($LASTEXITCODE -ne 0) {
   exit 1
 }
 Write-Host "Push a origin/$rama OK." -ForegroundColor Green
+Write-Host "  → Auto-deploy en Cloudflare Pages iniciado." -ForegroundColor Cyan
 
-# 7. Deploy a Cloudflare Pages (dist/, no public/)
-if ($SkipDeploy) {
-  Write-Host "Deploy omitido (-SkipDeploy)." -ForegroundColor Yellow
+# 7. Deploy manual a Cloudflare Pages (solo si se pide explícitamente)
+if (-not $Deploy) {
+  Write-Host "`nHecho. Usa -Deploy para deploy manual si el auto-deploy falla." -ForegroundColor Cyan
   exit 0
 }
-$confirma = Read-Host "¿Publicar el sitio en Cloudflare Pages? (s/N)"
+
+$confirma = Read-Host "`n¿Deploy manual a Cloudflare Pages? (s/N)"
 if ($confirma -notmatch "^(s|y|si|sí)$") {
-  Write-Host "Deploy cancelado." -ForegroundColor Yellow
+  Write-Host "Deploy manual cancelado." -ForegroundColor Yellow
   exit 0
 }
 npx wrangler pages deploy dist/ --project-name kultura-cl

@@ -9,14 +9,21 @@
 </head>
 <body>
   <script is:inline>
-    // Corregir hash del token OAuth antes de que Decap CMS cargue
-    // Decap usa #/ para su router interno y si el hash llega como #/access_token=...
-    // su parser de autenticación no lo reconoce (espera #access_token=... sin el /)
-    if (window.location.hash.startsWith('#/access_token=')) {
-      window.location.replace(
-        window.location.pathname + window.location.hash.replace('#/', '#')
-      );
-    }
+    // Corregir hash del token OAuth sin recargar la página
+    // Decap usa #/ para su router interno, y si el hash llega como
+    // #/access_token=... su parser no lo reconoce (espera #access_token=...)
+    (function() {
+      var hash = window.location.hash;
+      if (hash.indexOf('access_token') !== -1) {
+        // Si el token viene con / después de # (ej: #/access_token=...)
+        // lo corregimos a #access_token=... usando replaceState (sin recargar)
+        if (hash.indexOf('#/access_token=') === 0) {
+          var correctHash = '#' + hash.slice(2); // #access_token=...
+          window.history.replaceState(null, '', correctHash);
+        }
+        // Una vez corregido, Decap debería ver el token al iniciar
+      }
+    })();
   </script>
   <script is:inline src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
   <script is:inline>

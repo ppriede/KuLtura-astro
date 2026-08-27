@@ -62,7 +62,7 @@ fecha: <hoy, fecha local YYYY-MM-DD>
 autor: <autor del override, si no "KuLtura.cl">
 resumen:
 portada: images/portadas/<slug>.jpg
-ocultar_portada: "false"
+ocultar_portada: "true"
 ocultar_resumen: "true"
 estado: <estado del override, si no publico>
 ---
@@ -71,6 +71,12 @@ estado: <estado del override, si no publico>
 ```
 
 6. **Verificar**: `npm run build`. Si `<slug>.md` ya existe, no sobreescribir — avisar.
+
+7. **Preguntar al usuario** si quiere publicar (commit + push). Si confirma, ejecutar:
+   ```
+   publicar.ps1 -Message "<título del artículo>"
+   ```
+   Si no, indicar que el artículo queda creado localmente y puede publicarse después.
 
 ## Notas
 

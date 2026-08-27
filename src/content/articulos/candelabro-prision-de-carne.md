@@ -5,7 +5,7 @@ fecha: 2026-08-26
 autor: KuLtura.cl
 resumen:
 portada: images/portadas/candelabro-prision-de-carne.jpg
-ocultar_portada: "false"
+ocultar_portada: "true"
 ocultar_resumen: "true"
 estado: publico
 ---

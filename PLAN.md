@@ -33,30 +33,15 @@ src/
   remark-youtube.mjs         # plugin remark: párrafo "@youtube URL" -> iframe youtube-nocookie (exporta YT_ID_RE)
   styles/global.css          # CSS portado del original (se eliminó: esqueleto, pulso, reintentar — no aplican en estático)
 public/images/               # logo.png + images/portadas/* (copiadas del repo original)
-public/admin/config.yml      # Decap CMS (Fase 3): backend github + colección espejo del schema
-src/pages/admin/index.astro  # página admin de Decap (CDN + editor component YouTube, scripts is:inline)
 tests/                       # node --test: fecha.test.js, youtube.test.js (2/2)
 ```
 
-### Decap CMS (Fase 3)
+### Decap CMS (solo en desarrollo local)
 
-- `src/pages/admin/index.astro`: SPA de Decap desde CDN (`unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js`),
-  sin React UMD propio (el bundle completo incluye todo). Editor component "YouTube" registrado inline.
-  **Va como página en src/pages, NO en public/**: Astro 6 dev no sirve el directory index de public/
-  (`/admin/` daba 404). **Ambos scripts llevan `is:inline`** — sin eso Astro empaqueta los scripts
-  en módulos `/_astro/*` y el CDN de Decap se rompe.
-- `public/admin/config.yml`: backend github (`ppriede/KuLtura-astro`, `main`), `media_folder: public/images/portadas`,
-  `public_folder: /images/portadas`, colección `articulos` espejo del schema Zod (fecha date-only
-  `YYYY-MM-DD`, portada image con `choose_url`, estado select con default publico, 3 booleans ocultar_*).
-- **Editor component YouTube**: `pattern /^@youtube\s+(.+)$/`, `fromBlock` tolera URL cruda o `[texto](url)`
-  (el editor auto-linkea URLs), `toBlock` serializa `@youtube URL`, `toPreview` muestra miniatura
-  i.ytimg.com. El regex de ID está duplicado inline (espejo de `YT_ID_RE`) — no se puede importar el
-  .mjs de `src/` porque es ESM fuera de public/.
-- **Prueba local sin OAuth**: `npx decap-server` (proxies git local, puerto 8081) + `npm run dev`
-  → abrir `/admin/`. `local_backend: true` en config.yml.
-- Los .md viven en `src/content/articulos/` (folder de la colección) mientras media sube a
-  `public/images/portadas/` — carpetas distintas, Decap commitea ambas.
-```
+- `/admin/` carga **Decap CMS completo** solo en `npm run dev` (gracias a `import.meta.env.DEV`).
+- En el build de producción (Cloudflare Pages) muestra un mensaje informativo con instrucciones para editar localmente.
+- Flujo de edición: `npx decap-server` + `npm run dev` → `http://localhost:4321/admin/`
+- Los cambios se commitean al repo local al guardar. Luego se publican con `publicar.ps1`.
 
 ### Schema Zod (`src/content.config.ts`)
 

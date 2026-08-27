@@ -47,6 +47,8 @@ Luego abrir `http://localhost:4321/admin/`. Los cambios se commitean al repo loc
 
 El editor incluye un componente **YouTube**: inserta `@youtube <URL>`.
 
+> ⚠️ **El panel /admin solo funciona en desarrollo local.** En el sitio deployado (Cloudflare Pages) muestra un mensaje informativo en vez de cargar Decap CMS — las ediciones se hacen localmente y se publican con `publicar.ps1`.
+
 > **💡 Previsualizar desde otro dispositivo en la LAN / Zerotier:**
 > ```powershell
 > npm run dev -- --host 0.0.0.0

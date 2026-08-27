@@ -1,7 +1,7 @@
 ---
 titulo: "Repertorio CL - Nando García"
 categoria: musica
-fecha: 2026-08-26
+fecha: 2026-08-27
 autor: KuLtura.cl
 resumen:
 portada: images/portadas/repertorio-cl-nando-garcia.jpg

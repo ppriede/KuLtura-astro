@@ -116,3 +116,50 @@ npm run build   # verificar build completo
 - **PowerShell 5.1**: no soporta `&&` ni redirección `<`; usar `;` o `cmd /c`.
 - Rama principal: `main`.
 - El estado detallado del proyecto está en [`PLAN.md`](PLAN.md).
+
+
+
+# Iniciar
+```sh
+npx decap-server
+npx astro dev --host 0.0.0.0
+```
+
+# Tailscale con servicio
+revisando con hermes
+
+```sh
+#veamos que hay configurado
+tailscale serve status
+tailscale serve status --json
+
+```
+
+```json
+{
+  "TCP": {
+    "443": {
+      "HTTPS": true
+    }
+  },
+  "Web": {
+    "ruidologo-rtx.tail67f654.ts.net:443": {
+      "Handlers": {
+        "/": {
+          "Proxy": "http://127.0.0.1:8787"
+        }
+      }
+    }
+  }
+}
+```
+
+
+```sh
+# empezando a configurar
+tailscale serve --service=svc:kultura --https=443 127.0.0.1:4321
+```
+En tailscale se tiene que crear el servicio, que tenga el mismo puerto
+
+
+

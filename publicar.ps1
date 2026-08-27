@@ -1,9 +1,11 @@
 ﻿# publicar.ps1 — build + commit + sync + deploy de KuLtura-astro (Astro 6)
 # Uso: powershell -ExecutionPolicy Bypass -File publicar.ps1
 #   Por defecto: build + commit + push (auto-deploy de Cloudflare Pages)
-#   -Deploy     : además, deploy manual a Cloudflare Pages (útil si el auto-deploy falla)
-#   -Force      : deploy manual aunque no haya cambios en dist/
+#   -Message <texto> : mensaje del commit (opcional; si se omite, pide interactivo)
+#   -Deploy          : además, deploy manual a Cloudflare Pages
+#   -Force           : deploy manual aunque no haya cambios en dist/
 param(
+  [string]$Message,
   [switch]$Deploy,
   [switch]$Force
 )
@@ -38,8 +40,12 @@ if ($LASTEXITCODE -ne 0) {
 Write-Host "Build OK en dist/." -ForegroundColor Green
 
 # 4. Mensaje del commit
-$mensaje = Read-Host "Mensaje del commit (Enter = actualización de contenido)"
-$mensaje = $mensaje.Trim()
+if ($Message) {
+  $mensaje = $Message.Trim()
+} else {
+  $mensaje = Read-Host "Mensaje del commit (Enter = actualización de contenido)"
+  $mensaje = $mensaje.Trim()
+}
 if (-not $mensaje) { $mensaje = "actualización de contenido" }
 if ($mensaje.Length -gt 120) { $mensaje = $mensaje.Substring(0, 120).TrimEnd() }
 

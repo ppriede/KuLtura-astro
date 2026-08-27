@@ -47,6 +47,13 @@ Luego abrir `http://localhost:4321/admin/`. Los cambios se commitean al repo loc
 
 El editor incluye un componente **YouTube**: inserta `@youtube <URL>`.
 
+> **💡 Previsualizar desde otro dispositivo en la LAN / Zerotier:**
+> ```powershell
+> npm run dev -- --host 0.0.0.0
+> ```
+> Esto expone el servidor en todas las interfaces de red. Busca la IP del dispositivo anfitrión (WiFi, Zerotier, Tailscale) y desde el otro computador abre `http://<esa-ip>:4321/`.  
+> ⚠️ Nota: solo sirve para previsualizar. La edición (Decap CMS) requiere `decap-server` local, no funciona remoto.
+
 ### 2️⃣ Publicar
 
 ```powershell

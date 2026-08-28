@@ -10,3 +10,6 @@ npm-debug.log*
 .env
 .env.production
 .fase4.env
+# admin/ — solo local, no sube a producción
+public/admin/
+src/pages/admin/

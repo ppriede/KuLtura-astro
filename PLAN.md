@@ -36,11 +36,10 @@ public/images/               # logo.png + images/portadas/* (copiadas del repo o
 tests/                       # node --test: fecha.test.js, youtube.test.js (2/2)
 ```
 
-### Decap CMS (solo en desarrollo local)
+### Decap CMS (solo en local, gitignored)
 
-- `/admin/` carga **Decap CMS completo** solo en `npm run dev` (gracias a `import.meta.env.DEV`).
-- En el build de producción (Cloudflare Pages) muestra un mensaje informativo con instrucciones para editar localmente.
-- Flujo de edición: `npx decap-server` + `npm run dev` → `http://localhost:4321/admin/`
+- `/admin/` existe solo en desarrollo local (`.gitignore` evita que suba a producción).
+- Flujo: `npx decap-server` + `npm run dev` → `http://localhost:4321/admin/`
 - Los cambios se commitean al repo local al guardar. Luego se publican con `publicar.ps1`.
 
 ### Schema Zod (`src/content.config.ts`)

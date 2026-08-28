@@ -1,5 +1,5 @@
 ---
-titulo: "Dulce y Agraz - Sentimientos (VIDEO OFICIAL)"
+titulo: Dulce y Agraz - Sentimientos
 categoria: musica
 fecha: 2026-08-28 11:00
 autor: KuLtura.cl

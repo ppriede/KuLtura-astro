@@ -1,7 +1,7 @@
 ---
 titulo: Chini.png - Tímida ✧
 categoria: musica
-fecha: 2026-08-27
+fecha: 2026-08-27 20:00
 autor: KuLtura.cl
 portada: images/portadas/chini-png-timida-video-oficial.jpg
 resumen: null

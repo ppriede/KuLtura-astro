@@ -34,7 +34,7 @@ const resumenVisible = String(ocultar_resumen) !== "true" && resumen;
     </figure>
     <div class="tarjeta-cuerpo">
       <div class="tarjeta-meta">
-        <time datetime={fecha}>{formatFecha(fecha)}</time>
+        <time datetime={fecha.split(" ")[0]}>{formatFecha(fecha)}</time>
       </div>
       <h2 class="tarjeta-titulo">{titulo}</h2>
       {resumenVisible && <p class="tarjeta-resumen">{resumen}</p>}

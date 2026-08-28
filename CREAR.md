@@ -58,7 +58,7 @@ post: <categoria>, <título>, <URL>, autor: <nombre>, estado: <estado>
 ---
 titulo: <título del video (auto o personalizado)>
 categoria: <categoria>
-fecha: <hoy, fecha local YYYY-MM-DD>
+fecha: <hoy, fecha local YYYY-MM-DD HH:MM>
 autor: <autor del override, si no "KuLtura.cl">
 resumen:
 portada: images/portadas/<slug>.jpg
@@ -67,7 +67,7 @@ ocultar_resumen: "true"
 estado: <estado del override, si no publico>
 ---
 
-@youtube <URL>
+@youtube <URL completo>
 ```
 
 6. **Verificar**: `npm run build`. Si `<slug>.md` ya existe, no sobreescribir — avisar.
@@ -81,7 +81,7 @@ estado: <estado del override, si no publico>
 ## Notas
 
 - `portada` va **sin** `/` inicial (`images/portadas/...`); `[slug].astro` le antepone `/`.
-- `fecha` string "YYYY-MM-DD" (el schema la normaliza sola si llega como Date).
+- `fecha` string "YYYY-MM-DD" o "YYYY-MM-DD HH:MM" (el schema acepta ambos; la hora permite orden preciso dentro del mismo día).
 - `ocultar_*` son strings; `ocultar_autor` omitido = oculto (default `"true"`).
 - Cuerpo: `@youtube <URL>` en su propio párrafo (plugin `src/remark-youtube.mjs`).
   **Expandir** enlaces cortos a su forma completa:

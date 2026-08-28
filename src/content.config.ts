@@ -8,8 +8,9 @@ const articulos = defineCollection({
     titulo: z.string(),
     categoria: z.enum(["musica", "arte", "literatura", "fotografia", "columnas"]),
     // YAML interpreta 2026-08-03 como Date; normalizar a "YYYY-MM-DD" (medianoche UTC = fecha correcta)
+    // También acepta "YYYY-MM-DD HH:MM" para orden más preciso dentro del mismo día
     fecha: z
-      .union([z.string().regex(/^\d{4}-\d{2}-\d{2}$/), z.date()])
+      .union([z.string().regex(/^\d{4}-\d{2}-\d{2}( \d{2}:\d{2})?$/), z.date()])
       .transform((v) => (typeof v === "string" ? v : v.toISOString().slice(0, 10))),
     autor: z.string(),
     portada: z.string(),

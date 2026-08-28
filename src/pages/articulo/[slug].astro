@@ -32,7 +32,7 @@ const resumenVisible = String(ocultar_resumen) !== "true" && resumen;
           <a class="chip" href={`/?categoria=${encodeURIComponent(categoria)}`}>
             {CAT_LABELS[categoria] ?? categoria}
           </a>
-          <time datetime={fecha}>{formatFecha(fecha)}</time>
+          <time datetime={fecha.split(" ")[0]}>{formatFecha(fecha)}</time>
         </div>
         <h1 class="articulo-titulo">{titulo}</h1>
         {resumenVisible && <p class="articulo-resumen">{resumen}</p>}

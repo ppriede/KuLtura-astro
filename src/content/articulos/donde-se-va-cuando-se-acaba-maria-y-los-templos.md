@@ -1,7 +1,7 @@
 ---
 titulo: María y los Templos - Dónde se va cuando se acaba
 categoria: musica
-fecha: 2026-08-27
+fecha: 2026-08-27 21:00
 autor: KuLtura.cl
 portada: images/portadas/donde-se-va-cuando-se-acaba-maria-y-los-templos.jpg
 resumen: null

@@ -30,7 +30,8 @@ collections:
         name: "fecha"
         widget: "datetime"
         date_format: "YYYY-MM-DD"
-        time_format: false
+        time_format: "HH:mm"
+        format: "YYYY-MM-DD HH:mm"
       - {label: "Autor", name: "autor", widget: "string"}
       - label: "Portada"
         name: "portada"

@@ -14,7 +14,27 @@ Set-Location $PSScriptRoot
 Write-Host ""
 Write-Host "=== Publicar KuLtura-astro ===" -ForegroundColor Cyan
 
-# 1. Verificar repositorio git
+# 1. Regenerar calendario de eventos
+Write-Host "`nRegenerando calendario de eventos..." -ForegroundColor Cyan
+$monitorDir = Join-Path $PSScriptRoot "..\KuLtura-monitor-eventos"
+$monitorScript = Join-Path $monitorDir "convertir_calendario.py"
+$destino = Join-Path $PSScriptRoot "public\eventos.json"
+if (Test-Path $monitorScript) {
+  python $monitorScript
+  if ($LASTEXITCODE -eq 0) {
+    $jsonSrc = Join-Path $monitorDir "eventos_calendario.json"
+    if (Test-Path $jsonSrc) {
+      Copy-Item $jsonSrc $destino -Force
+      Write-Host "  → Calendario copiado a public/eventos.json" -ForegroundColor Green
+    }
+  } else {
+    Write-Host "  ⚠ Script de eventos falló, se usará versión anterior si existe." -ForegroundColor Yellow
+  }
+} else {
+  Write-Host "  ⚠ No se encontró $monitorScript, se usará versión anterior si existe." -ForegroundColor Yellow
+}
+
+# 2. Verificar repositorio git
 git rev-parse --is-inside-work-tree *> $null
 if ($LASTEXITCODE -ne 0) {
   Write-Host "No es un repositorio git: $PSScriptRoot" -ForegroundColor Red

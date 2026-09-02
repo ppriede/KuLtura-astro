@@ -89,3 +89,14 @@ estado: <estado del override, si no publico>
   - Esto asegura compatibilidad con el editor component de Decap CMS y consistencia en todos los artículos.
 - La portada vive en `public/images/portadas/` (mismo folder que usa Decap como `media_folder`).
 - Después de crear, publicar con: `publicar.ps1 -Message "<título del artículo>"`.
+
+## Calendario de eventos (página /calendario/)
+
+El proyecto incluye una página de calendario de conciertos (FullCalendar 6) que fusiona
+eventos de PortalTicket y Cooperativa. **NO es un artículo**: no se crea con `post:`.
+
+- Documento de continuidad completo: **`CALENDARIO.md`** (leer antes de tocar el calendario).
+- `publicar.ps1` regenera automáticamente `public/eventos.json` desde
+  `../KuLtura-monitor-eventos/convertir_calendario.py` antes del build.
+- Para regenerar solo los datos: `KuLtura-monitor-eventos\regenerar.bat` (doble clic).
+- Test: `python test_calendario_astro.py` (requiere dev server arriba + Playwright).

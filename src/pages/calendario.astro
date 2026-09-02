@@ -1,0 +1,243 @@
+---
+import Base from "../layouts/Base.astro";
+---
+
+<Base
+  titulo="Calendario de Eventos · KuLtura"
+  descripcion="Calendario de conciertos y eventos en Chile — PortalTicket + Cooperativa"
+>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15/index.global.min.css"
+  />
+  <style is:global>
+    /* ─── FullCalendar con las variables CSS de KuLtura ─── */
+    .cal-wrap {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 1.5rem 1.25rem 3rem;
+    }
+
+    .fc {
+      background: var(--surface);
+      border-radius: 12px;
+      padding: 16px;
+      --fc-border-color: var(--line);
+      --fc-page-bg-color: var(--surface);
+      --fc-neutral-bg-color: var(--surface);
+      --fc-list-event-hover-bg-color: color-mix(in srgb, var(--surface), var(--text) 8%);
+      --fc-today-bg-color: color-mix(in srgb, var(--accent), transparent 88%);
+      --fc-event-bg-color: var(--accent);
+      --fc-event-border-color: var(--accent);
+      --fc-event-text-color: #fff;
+      --fc-button-text-color: var(--text);
+      --fc-button-bg-color: var(--surface);
+      --fc-button-border-color: var(--line);
+      --fc-button-hover-bg-color: color-mix(in srgb, var(--surface), var(--text) 10%);
+      --fc-button-hover-border-color: var(--accent);
+      --fc-button-active-bg-color: var(--accent);
+      --fc-button-active-border-color: var(--accent);
+    }
+
+    .fc th {
+      padding: 8px 0;
+      color: var(--muted);
+      font-weight: 500;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    .fc .fc-daygrid-day-number { color: var(--text); font-size: 0.9rem; }
+    .fc .fc-daygrid-day.fc-day-other .fc-daygrid-day-number { color: var(--muted); opacity: 0.4; }
+    .fc .fc-col-header-cell { border-bottom: none; }
+    .fc .fc-daygrid-day { border-color: var(--line); }
+    .fc .fc-day-today .fc-daygrid-day-number { color: var(--accent); font-weight: 700; }
+    .fc .fc-button { border-radius: 6px; font-size: 0.8rem; font-weight: 500; }
+    .fc .fc-toolbar-title { font-size: 1.1rem; font-weight: 600; color: var(--text); }
+    .fc .fc-event {
+      border-radius: 4px;
+      padding: 2px 5px;
+      font-size: 0.78rem;
+      font-weight: 500;
+      cursor: pointer;
+      border: none;
+      white-space: normal;
+      overflow: visible;
+    }
+    .fc .fc-event:hover { filter: brightness(1.15); }
+    .fc .fc-daygrid-event .fc-event-title { white-space: normal; overflow: visible; text-overflow: clip; font-weight: 500; }
+    .fc .fc-daygrid-event .fc-event-time { display: none; }
+    .fc .fc-daygrid-more-link { font-size: 0.75rem; color: var(--accent); }
+    .fc .fc-list-day-cushion { background: color-mix(in srgb, var(--surface), var(--text) 4%) !important; }
+    .fc .fc-list-day-text, .fc .fc-list-day-side-text { color: var(--muted) !important; }
+    .fc .fc-list-event-text { color: var(--text); }
+
+    /* ─── Header del calendario ─── */
+    .cal-header {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 1.5rem 1.25rem 0;
+    }
+    .cal-header h1 {
+      font-size: 1.4rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: var(--text);
+    }
+    .cal-header .subtitle {
+      margin-top: 4px;
+      font-size: 0.85rem;
+      color: var(--muted);
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 8px;
+    }
+    .cal-header .src-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 0.72rem;
+      padding: 2px 8px;
+      border-radius: 10px;
+      font-weight: 500;
+    }
+    .cal-header .src-badge.portalticket { background: color-mix(in srgb, var(--accent), transparent 80%); color: var(--accent); }
+    .cal-header .src-badge.cooperativa { background: #7ec8e320; color: #7ec8e3; }
+
+    /* ─── Lightbox ─── */
+    .lightbox-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.6);
+      backdrop-filter: blur(6px);
+      z-index: 9999;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+    .lightbox-overlay.active { display: flex; }
+
+    .lightbox {
+      background: var(--surface);
+      border-radius: 16px;
+      max-width: 480px;
+      width: 100%;
+      padding: 32px;
+      position: relative;
+      animation: lboxIn 0.2s ease;
+      box-shadow: 0 24px 80px rgba(0,0,0,0.4);
+      border: 1px solid var(--line);
+    }
+    @keyframes lboxIn {
+      from { opacity: 0; transform: scale(0.95) translateY(8px); }
+      to { opacity: 1; transform: scale(1) translateY(0); }
+    }
+
+    .lightbox-close {
+      position: absolute;
+      top: 12px; right: 16px;
+      background: none;
+      border: none;
+      color: var(--muted);
+      font-size: 1.4rem;
+      cursor: pointer;
+      line-height: 1;
+      padding: 4px;
+      transition: color 0.15s;
+    }
+    .lightbox-close:hover { color: var(--text); }
+
+    .lightbox .category {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      padding: 3px 10px;
+      border-radius: 20px;
+      margin-bottom: 12px;
+      font-weight: 600;
+    }
+    .lightbox .category.portalticket {
+      color: var(--accent);
+      background: color-mix(in srgb, var(--accent), transparent 80%);
+    }
+    .lightbox .category.cooperativa {
+      color: #7ec8e3;
+      background: #7ec8e320;
+    }
+
+    .lightbox h2 {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--text);
+      line-height: 1.3;
+      margin-bottom: 20px;
+    }
+    .lightbox .detail-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      margin-bottom: 14px;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+    .lightbox .detail-row strong { color: var(--text); }
+    .lightbox .btn-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      margin-top: 8px;
+      padding: 10px 20px;
+      background: var(--accent);
+      color: #fff;
+      font-weight: 600;
+      font-size: 0.85rem;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: opacity 0.15s;
+    }
+    .lightbox .btn-link:hover { opacity: 0.9; }
+  </style>
+
+  <div class="cal-header">
+    <h1>📅 <span>Calendario</span> de Eventos</h1>
+    <div class="subtitle">
+      <span id="event-count">0</span> eventos
+      <span class="src-badge portalticket" id="badge-portalticket">PortalTicket</span>
+      <span class="src-badge cooperativa" id="badge-cooperativa">Cooperativa</span>
+    </div>
+  </div>
+
+  <div class="cal-wrap">
+    <div id="calendar"></div>
+  </div>
+
+  <!-- Lightbox -->
+  <div class="lightbox-overlay" id="lightbox" onclick="closeLightbox(event)">
+    <div class="lightbox" onclick="event.stopPropagation()">
+      <button class="lightbox-close" onclick="closeLightbox()">✕</button>
+      <div class="category" id="lb-category">Evento</div>
+      <h2 id="lb-title"></h2>
+      <div class="detail-row">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="18" height="18"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+        <span><strong>Fecha:</strong> <span id="lb-date"></span></span>
+      </div>
+      <div class="detail-row">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="18" height="18"><path d="M3 21h18M9 3l6 6M9 3l-6 18M9 3v3m6 9h3"/></svg>
+        <span><strong>Lugar:</strong> <span id="lb-venue"></span></span>
+      </div>
+      <a class="btn-link" id="lb-link" href="#" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        Ver en ticket
+      </a>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15/index.global.min.js" is:inline></script>
+  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15/locales/es.global.min.js" is:inline></script>
+  <script src="/js/calendario.js" defer></script>
+</Base>

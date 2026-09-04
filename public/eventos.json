@@ -1,166 +1,148 @@
 {
-  "generated": "2026-09-03T12:54:15.009735",
+  "generated": "2026-09-04T10:25:14.716379",
   "sources": [
     "portqlticket",
     "cooperativa"
   ],
   "source_files": {
-    "portqlticket": "eventos_nuevos_20260903_0359.json",
+    "portqlticket": "eventos_nuevos_20260904_0400.json",
     "cooperativa": "cooperativa_conciertos_20260901_2013.json"
   },
-  "total_events": 85,
+  "total_events": 83,
   "events": [
     {
-      "slug": "mesanotconcert7",
-      "title": "MESA NOT CONCERT | CREAMOS UNA CANCION CONTIGO",
-      "start": "2026-09-05T18:30:00",
-      "date_label": "05/09/2026 18:30",
-      "venue": "Holy Moly Tobalaba, Providencia",
-      "url": "https://portaldisc.com/evento/mesanotconcert7",
+      "slug": "lostricoloresseptiembre2026",
+      "title": "SABADO DE CONCIERTOS - LOS TRICOLORES CUECA BRAVA EN EL HUASO ENRIQUE",
+      "start": "2026-09-05T21:30:00",
+      "date_label": "05/09/2026 21:30",
+      "venue": "El huaso Enrique, Santiago Centro",
+      "url": "https://portaldisc.com/evento/lostricoloresseptiembre2026",
       "source": "PortalTicket"
     },
     {
-      "slug": "septimafolklorica",
-      "title": "SESIONES Y EXPERIENCIAS LA CANDELARIA: LA 7MA FOLKLORICA",
-      "start": "2026-09-11T20:00:00",
-      "date_label": "11/09/2026 20:00",
-      "venue": "Centro Cultural La Candelaria, Talca",
-      "url": "https://portaldisc.com/evento/septimafolklorica",
+      "slug": "notfondakutral",
+      "title": "NOT FONDA WILD OUT EN KUTRAL KO",
+      "start": "2026-09-10T18:00:00",
+      "date_label": "10/09/2026 18:00",
+      "venue": "Kutral Ko, Concepción",
+      "url": "https://portaldisc.com/evento/notfondakutral",
       "source": "PortalTicket"
     },
     {
-      "slug": "clasecueca16sepupuya",
-      "title": "MIÉRCOLES DE CLASES DE CUECA EN PUPUYA RESTAURANT",
+      "slug": "primaverafemeninakathyaymonica",
+      "title": "CICLO PRIMAVERA FEMENINA EN TRUFA CAFETERIA GOURMET KATHYA NEIRA Y MÓNICA ROZAS & BOM DESTINO",
+      "start": "2026-09-12T19:00:00",
+      "date_label": "12/09/2026 19:00",
+      "venue": "Trufa Cafetería, Ñuñoa",
+      "url": "https://portaldisc.com/evento/primaverafemeninakathyaymonica",
+      "source": "PortalTicket"
+    },
+    {
+      "slug": "adios-mundo-cruel-en-pcdv-15-09-26",
+      "title": "ADIOS MUNDO CRUEL EN EL PARQUE CULTURAL DE VALPARAÍSO",
+      "start": "2026-09-15T19:00:00",
+      "date_label": "15/09/2026 19:00",
+      "venue": "Parque Cultural de Valparaíso - Ex Cárcel, Valparaíso",
+      "url": "https://portaldisc.com/evento/adios-mundo-cruel-en-pcdv-15-09-26",
+      "source": "PortalTicket"
+    },
+    {
+      "slug": "primaverafemeninatamaraylasporfias",
+      "title": "CICLO PRIMAVERA FEMENINA EN TRUFA CAFETERIA GOURMET TAMARA CORREA Y LAS PORFIÁS",
       "start": "2026-09-16T19:00:00",
       "date_label": "16/09/2026 19:00",
-      "venue": "Restaurant Pupuya, Santiago Centro",
-      "url": "https://portaldisc.com/evento/clasecueca16sepupuya",
+      "venue": "Trufa Cafetería, Ñuñoa",
+      "url": "https://portaldisc.com/evento/primaverafemeninatamaraylasporfias",
       "source": "PortalTicket"
     },
     {
-      "slug": "lafondadechelita",
-      "title": "LA FONDA DE CHELITA EN 12 LUNAS RESTOBAR, LA SERENA",
-      "start": "2026-09-17T20:00:00",
-      "date_label": "17/09/2026 20:00",
-      "venue": "12 Lunas Restobar, La Serena",
-      "url": "https://portaldisc.com/evento/lafondadechelita",
+      "slug": "adios-mundo-cruel-en-pcdv-16-09-26",
+      "title": "ADIOS MUNDO CRUEL EN EL PARQUE CULTURAL DE VALPARAÍSO",
+      "start": "2026-09-16T19:00:00",
+      "date_label": "16/09/2026 19:00",
+      "venue": "Parque Cultural de Valparaíso - Ex Cárcel, Valparaíso",
+      "url": "https://portaldisc.com/evento/adios-mundo-cruel-en-pcdv-16-09-26",
       "source": "PortalTicket"
     },
     {
-      "slug": "pascualatrota19sept",
-      "title": "PASCUALA ILABACA Y FAUNA EN TROTAMUNDOS, VALPARAÍSO",
-      "start": "2026-09-19T20:00:00",
-      "date_label": "19/09/2026 20:00",
-      "venue": "Trotamundos Valparaíso, Valparaíso",
-      "url": "https://portaldisc.com/evento/pascualatrota19sept",
+      "slug": "antifondatool",
+      "title": "SURROUND SESSIONS: ANTIFONDA TOOL - ÆNIMA 30 ANIVERSARIO EN CASA ESTUDIO ROCKAXIS",
+      "start": "2026-09-16T20:00:00",
+      "date_label": "16/09/2026 20:00",
+      "venue": "Casa Estudio Rockaxis, Providencia",
+      "url": "https://portaldisc.com/evento/antifondatool",
       "source": "PortalTicket"
     },
     {
-      "slug": "nicholasyfranco",
-      "title": "NICHOLAS & FRANCO : CLASICOS DE LA NOSTALGIA EN HIDDEN COCKTAIL ROOM",
+      "slug": "especialdemusicachilenaentemplocrapula",
+      "title": "ESPECIAL DE MÚSICA CHILENA EN TEMPLO CRÁPULA, CONCEPCIÓN",
+      "start": "2026-09-19T21:00:00",
+      "date_label": "19/09/2026 21:00",
+      "venue": "Templo Crápula, Concepción",
+      "url": "https://portaldisc.com/evento/especialdemusicachilenaentemplocrapula",
+      "source": "PortalTicket"
+    },
+    {
+      "slug": "qss19sept2026",
+      "title": "QUEBRADA SOUNDSYSTEM 9 AÑOS EN EMPORIO ECHAURREN",
+      "start": "2026-09-19T22:00:00",
+      "date_label": "19/09/2026 22:00",
+      "venue": "Emporio Echaurren, Valparaíso",
+      "url": "https://portaldisc.com/evento/qss19sept2026",
+      "source": "PortalTicket"
+    },
+    {
+      "slug": "oleajes-delirio",
+      "title": "OLEAJES & DELIRIO EN MI BAR",
+      "start": "2026-09-23T21:00:00",
+      "date_label": "23/09/2026 21:00",
+      "venue": "MiBar, Providencia",
+      "url": "https://portaldisc.com/evento/oleajes-delirio",
+      "source": "PortalTicket"
+    },
+    {
+      "slug": "franciscaymatiasnochedetrova",
+      "title": "NOCHE DE TROVA: FRANCISCA EMILIA Y MATÍAS MALDONADO",
       "start": "2026-09-24T21:00:00",
       "date_label": "24/09/2026 21:00",
-      "venue": "Hidden Cocktail Room, Santiago Centro",
-      "url": "https://portaldisc.com/evento/nicholasyfranco",
+      "venue": "Bar Cantares, Providencia",
+      "url": "https://portaldisc.com/evento/franciscaymatiasnochedetrova",
       "source": "PortalTicket"
     },
     {
-      "slug": "musenight3",
-      "title": "SURROUND SESSION: MUSE NIGHT 3 EN CASA ESTUDIO ROCKAXIS",
-      "start": "2026-09-26T19:00:00",
-      "date_label": "26/09/2026 19:00",
-      "venue": "Casa Estudio Rockaxis, Ñuñoa",
-      "url": "https://portaldisc.com/evento/musenight3",
+      "slug": "geniusofffunk",
+      "title": "LONDRES 45 RPM: GENIUS OFF FUNK: C-FUNK + BRUNO BORLONE + BOOGIE MIKE",
+      "start": "2026-09-25T21:00:00",
+      "date_label": "25/09/2026 21:00",
+      "venue": "Londres 45 bistro & bat, Santiago Centro",
+      "url": "https://portaldisc.com/evento/geniusofffunk",
       "source": "PortalTicket"
     },
     {
-      "slug": "huaracasaenelaire",
-      "title": "HUARA EN CASA EN EL AIRE",
+      "slug": "ensambletransatlanticoencasablanca",
+      "title": "CONCIERTO ENSAMBLE TRANSATLÁNTICO DE FOLK CHILENO EN TEATRO MUNICIPAL DE CASABLANCA",
+      "start": "2026-09-26T17:00:00",
+      "date_label": "26/09/2026 17:00",
+      "venue": "Teatro Municipal de Casablanca, Casablanca",
+      "url": "https://portaldisc.com/evento/ensambletransatlanticoencasablanca",
+      "source": "PortalTicket"
+    },
+    {
+      "slug": "estezashowerato",
+      "title": "ESTEZA PRESENTA: ERATO SHOW DE LANZAMIENTO EN ESTUDIO VINILO",
+      "start": "2026-09-26T20:30:00",
+      "date_label": "26/09/2026 20:30",
+      "venue": "Estudio Vinilo, Ñuñoa",
+      "url": "https://portaldisc.com/evento/estezashowerato",
+      "source": "PortalTicket"
+    },
+    {
+      "slug": "azolaryborealmibar",
+      "title": "AZOLAR + BOREAL | LA PREVIA AL ESTRENO",
       "start": "2026-10-01T21:00:00",
       "date_label": "01/10/2026 21:00",
-      "venue": "La Casa en el Aire, Providencia",
-      "url": "https://portaldisc.com/evento/huaracasaenelaire",
-      "source": "PortalTicket"
-    },
-    {
-      "slug": "fernandocabrera",
-      "title": "FERNANDO CABRERA EN VIÑA DEL MAR",
-      "start": "2026-10-08T20:30:00",
-      "date_label": "08/10/2026 20:30",
-      "venue": "El Pasaje, Viña del Mar",
-      "url": "https://portaldisc.com/evento/fernandocabrera",
-      "source": "PortalTicket"
-    },
-    {
-      "slug": "kramerenpuertomontt",
-      "title": "KRAMER EN LOS 3 PLATOS, PUERTO MONTT",
-      "start": "2026-10-08T22:00:00",
-      "date_label": "08/10/2026 22:00",
-      "venue": "Los 3 Platos, Puerto Montt",
-      "url": "https://portaldisc.com/evento/kramerenpuertomontt",
-      "source": "PortalTicket"
-    },
-    {
-      "slug": "resistenciametalica1",
-      "title": "RESISTENCIA METALICA EN CLUB CAMCCH, CHILLÁN",
-      "start": "2026-10-09T18:00:00",
-      "date_label": "09/10/2026 18:00",
-      "venue": "Lugar Secreto, Chile",
-      "url": "https://portaldisc.com/evento/resistenciametalica1",
-      "source": "PortalTicket"
-    },
-    {
-      "slug": "kramerenosorno",
-      "title": "KRAMER EN MATUREO, OSORNO",
-      "start": "2026-10-09T22:00:00",
-      "date_label": "09/10/2026 22:00",
-      "venue": "Matureo, Osorno",
-      "url": "https://portaldisc.com/evento/kramerenosorno",
-      "source": "PortalTicket"
-    },
-    {
-      "slug": "kramerenvaldivia",
-      "title": "STEFAN KRAMER EN LA BOTA CERVECERA, VALDIVIA",
-      "start": "2026-10-10T20:00:00",
-      "date_label": "10/10/2026 20:00",
-      "venue": "La Bota Cervecera, Valdivia",
-      "url": "https://portaldisc.com/evento/kramerenvaldivia",
-      "source": "PortalTicket"
-    },
-    {
-      "slug": "solylluvia-lms",
-      "title": "SOL Y LLUVIA EN AULA MAGNA MANUEL DE SALAS",
-      "start": "2026-10-17T20:00:00",
-      "date_label": "17/10/2026 20:00",
-      "venue": "Aula Magna Liceo Manuel de Salas, Ñuñoa",
-      "url": "https://portaldisc.com/evento/solylluvia-lms",
-      "source": "PortalTicket"
-    },
-    {
-      "slug": "shadowdance3",
-      "title": "SHADOW DANCE EN CASSOT",
-      "start": "2026-10-17T23:30:00",
-      "date_label": "17/10/2026 23:30",
-      "venue": "Cassot Bar, Valparaíso",
-      "url": "https://portaldisc.com/evento/shadowdance3",
-      "source": "PortalTicket"
-    },
-    {
-      "slug": "mialeighton",
-      "title": "MIA LEIGHTON INTIMO EN HIDDEN COCKTAIL ROOM",
-      "start": "2026-10-24T22:30:00",
-      "date_label": "24/10/2026 22:30",
-      "venue": "Hidden Cocktail Room, Santiago Centro",
-      "url": "https://portaldisc.com/evento/mialeighton",
-      "source": "PortalTicket"
-    },
-    {
-      "slug": "fabricantesdementirastributosuigenerischillan2026",
-      "title": "TRIBUTO A SUI GENERIS POR FABRICANTES DE MENTIRAS EN CHILLÁN - GAMBERETTO",
-      "start": "2026-10-30T21:00:00",
-      "date_label": "30/10/2026 21:00",
-      "venue": "Gamberetto Pizzería & Bar, Chillán",
-      "url": "https://portaldisc.com/evento/fabricantesdementirastributosuigenerischillan2026",
+      "venue": "MiBar, Providencia",
+      "url": "https://portaldisc.com/evento/azolaryborealmibar",
       "source": "PortalTicket"
     },
     {

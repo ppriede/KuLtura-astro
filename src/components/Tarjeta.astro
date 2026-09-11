@@ -11,16 +11,18 @@ interface Props {
   resumen: string;
   ocultar_resumen: string;
   ocultar_autor: string;
+  destacado: string;
 }
 
-const { id, titulo, categoria, fecha, autor, portada, resumen, ocultar_resumen, ocultar_autor } =
+const { id, titulo, categoria, fecha, autor, portada, resumen, ocultar_resumen, ocultar_autor, destacado } =
   Astro.props;
 const columna = categoria === "columnas";
 const autorVisible = String(ocultar_autor) === "false";
 const resumenVisible = String(ocultar_resumen) !== "true" && resumen;
+const esDestacado = String(destacado) === "true";
 ---
 
-<article class="tarjeta">
+<article class={`tarjeta${esDestacado ? " destacado" : ""}`} data-categoria={categoria}>
   <a
     class="chip chip-foto"
     href={`/?categoria=${encodeURIComponent(categoria)}`}

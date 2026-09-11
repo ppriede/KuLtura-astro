@@ -6,7 +6,7 @@ const articulos = defineCollection({
   loader: glob({ pattern: "**/*.md", base: "./src/content/articulos" }),
   schema: z.object({
     titulo: z.string(),
-    categoria: z.enum(["musica", "arte", "literatura", "fotografia", "columnas"]),
+    categoria: z.enum(["musica", "arte", "literatura", "fotografia", "columnas", "cine"]),
     // YAML interpreta 2026-08-03 como Date; normalizar a "YYYY-MM-DD" (medianoche UTC = fecha correcta)
     // También acepta "YYYY-MM-DD HH:MM" para orden más preciso dentro del mismo día
     fecha: z
@@ -22,6 +22,7 @@ const articulos = defineCollection({
     ocultar_portada: z.coerce.string().default("false"),
     ocultar_resumen: z.coerce.string().default("false"),
     ocultar_autor: z.coerce.string().default("true"),
+    destacado: z.coerce.string().default("false"),
   }),
 });
 

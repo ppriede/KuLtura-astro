@@ -26,7 +26,7 @@ El agente usa el título que le pasas en vez de extraerlo del video.
 
 ### En ambos formatos:
 
-- `categoria`: musica | arte | literatura | fotografia | columnas
+- `categoria`: musica | arte | literatura | fotografia | columnas | cine
 - `URL`: cualquier URL de YouTube (watch, youtu.be, shorts). El ID se extrae con `YT_ID_RE`.
 
 Overrides opcionales (se agregan al final):
@@ -56,15 +56,16 @@ post: <categoria>, <título>, <URL>, autor: <nombre>, estado: <estado>
 
 ```markdown
 ---
-titulo: <título del video (auto o personalizado)>
-categoria: <categoria>
-fecha: <hoy, fecha local YYYY-MM-DD HH:MM>
-autor: <autor del override, si no "KuLtura.cl">
-resumen:
-portada: images/portadas/<slug>.jpg
-ocultar_portada: "true"
-ocultar_resumen: "true"
-estado: <estado del override, si no publico>
+|titulo: <título del video (auto o personalizado)>
+|categoria: <categoria>
+|fecha: <hoy, fecha local YYYY-MM-DD HH:MM>
+|autor: <autor del override, si no "KuLtura.cl">
+|resumen:
+|portada: images/portadas/<slug>.jpg
+|ocultar_portada: "true"
+|ocultar_resumen: "true"
+|destacado: "false"
+|estado: <estado del override, si no publico>
 ---
 
 @youtube <URL completo>

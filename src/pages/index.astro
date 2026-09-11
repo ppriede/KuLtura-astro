@@ -6,7 +6,12 @@ import { CAT_LABELS, CAT_ORDER } from "../lib/shared.js";
 
 const articulos = (await getCollection("articulos"))
   .filter((a) => a.data.estado === "publico")
-  .sort((a, b) => b.data.fecha.localeCompare(a.data.fecha));
+  .sort((a, b) => {
+    const aDest = String(a.data.destacado) === "true" ? 1 : 0;
+    const bDest = String(b.data.destacado) === "true" ? 1 : 0;
+    if (aDest !== bDest) return bDest - aDest;
+    return b.data.fecha.localeCompare(a.data.fecha);
+  });
 
 const catActual = Astro.url.searchParams.get("categoria");
 const visibles = catActual
@@ -59,10 +64,48 @@ const presentes = CAT_ORDER.filter((c) =>
               resumen={a.data.resumen}
               ocultar_resumen={a.data.ocultar_resumen}
               ocultar_autor={a.data.ocultar_autor}
+              destacado={a.data.destacado}
             />
           ))
         )
       }
     </section>
+    <div id="sin-articulos" class="estado" hidden>
+      <h2>Sin artículos</h2>
+      <p>No hay artículos en esta categoría todavía.</p>
+    </div>
   </main>
 </Base>
+
+<script is:inline>
+  (function () {
+    const params = new URLSearchParams(location.search);
+    const cat = params.get("categoria");
+    if (!cat) return;
+
+    const tarjetas = document.querySelectorAll("[data-categoria]");
+    let visibles = 0;
+    tarjetas.forEach((el) => {
+      if (el.dataset.categoria === cat) {
+        el.style.display = "";
+        visibles++;
+      } else {
+        el.style.display = "none";
+      }
+    });
+
+    // Actualizar aria-current en filtros
+    document.querySelectorAll(".filtro").forEach((a) => {
+      const href = a.getAttribute("href");
+      if (href === "/?categoria=" + encodeURIComponent(cat)) {
+        a.setAttribute("aria-current", "true");
+      } else if (href === "/") {
+        a.removeAttribute("aria-current");
+      }
+    });
+
+    // Mostrar mensaje vacío si no hay coincidencias
+    const empty = document.getElementById("sin-articulos");
+    if (empty) empty.hidden = visibles > 0;
+  })();
+</script>

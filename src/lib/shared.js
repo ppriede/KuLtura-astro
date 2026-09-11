@@ -4,9 +4,10 @@ export const CAT_LABELS = {
   literatura: "📖 Literatura",
   fotografia: "📸 Fotografía",
   columnas: "Columnas",
+  cine: "📽️ Cine",
 };
 
-export const CAT_ORDER = ["musica", "arte", "literatura", "fotografia", "columnas"];
+export const CAT_ORDER = ["musica", "arte", "literatura", "fotografia", "columnas", "cine"];
 
 // "2026-08-16" o "2026-08-16 18:30" como Date = medianoche UTC → se corría 1 día en zonas al oeste de UTC; se arma en hora local
 export function formatFecha(iso) {

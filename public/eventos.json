@@ -1,112 +1,22 @@
 {
-  "generated": "2026-09-07T10:30:56.334730",
+  "generated": "2026-09-11T10:11:15.328004",
   "sources": [
     "portqlticket",
     "cooperativa"
   ],
   "source_files": {
-    "portqlticket": "eventos_nuevos_20260907_0402.json",
+    "portqlticket": "eventos_nuevos_20260911_0856.json",
     "cooperativa": "cooperativa_conciertos_20260901_2013.json"
   },
-  "total_events": 79,
+  "total_events": 69,
   "events": [
     {
-      "slug": "triomemorialencafebrazil",
-      "title": "MEMORIA SIEMPRE: CANTOS CONTRA EL OLVIDO",
-      "start": "2026-09-10T20:00:00",
-      "date_label": "10/09/2026 20:00",
-      "venue": "Café Brazil, Yungay",
-      "url": "https://portaldisc.com/evento/triomemorialencafebrazil",
-      "source": "PortalTicket"
-    },
-    {
-      "slug": "conciertoabeneficioreconstrucciondealoroto",
-      "title": "CONCIERTO A BENEFICIO. RECONSTRUCCIÓN DE A LO ROTO",
-      "start": "2026-09-12T20:00:00",
-      "date_label": "12/09/2026 20:00",
-      "venue": "Café Brazil, Santiago Centro",
-      "url": "https://portaldisc.com/evento/conciertoabeneficioreconstrucciondealoroto",
-      "source": "PortalTicket"
-    },
-    {
-      "slug": "nochesynthopvaria",
-      "title": "NOCHE SYNTHPOP EN VARIÁ",
-      "start": "2026-09-12T23:00:00",
-      "date_label": "12/09/2026 23:00",
-      "venue": "Lugar Secreto, Chile",
-      "url": "https://portaldisc.com/evento/nochesynthopvaria",
-      "source": "PortalTicket"
-    },
-    {
-      "slug": "silvioypablotributolaotracasa2026",
-      "title": "TRIBUTO A SILVIO & PABLO / CON ALDO + VICENCIO EN BAR LA OTRA CASA",
-      "start": "2026-09-15T21:30:00",
-      "date_label": "15/09/2026 21:30",
-      "venue": "Bar La Otra Casa, Providencia",
-      "url": "https://portaldisc.com/evento/silvioypablotributolaotracasa2026",
-      "source": "PortalTicket"
-    },
-    {
-      "slug": "suaveritmo",
-      "title": "SUAVE RITMO EN TEATRO FÁBRICA",
-      "start": "2026-09-20T16:30:00",
-      "date_label": "20/09/2026 16:30",
-      "venue": "Teatro Fábrica, Providencia",
-      "url": "https://portaldisc.com/evento/suaveritmo",
-      "source": "PortalTicket"
-    },
-    {
-      "slug": "tsubasareservoirchronicleenpressstart",
-      "title": "TSUBASA RESERVOIR CHRONICLE EN PRESS START",
-      "start": "2026-09-25T19:15:00",
-      "date_label": "25/09/2026 19:15",
-      "venue": "Restobar Press-Start, Providencia",
-      "url": "https://portaldisc.com/evento/tsubasareservoirchronicleenpressstart",
-      "source": "PortalTicket"
-    },
-    {
-      "slug": "sinfoniaultimavoluntadeninsertcoin",
-      "title": "SINFONÍA DE LA ÚLTIMA VOLUNTAD EN INSERT COIN",
-      "start": "2026-09-27T17:00:00",
-      "date_label": "27/09/2026 17:00",
-      "venue": "Insert Coin Resto Bar, Ñuñoa",
-      "url": "https://portaldisc.com/evento/sinfoniaultimavoluntadeninsertcoin",
-      "source": "PortalTicket"
-    },
-    {
-      "slug": "fonsoendiscolarecords",
-      "title": "FONSO SE PRESENTA EN DÍSCOLA RECORDS, TEMUCO",
-      "start": "2026-09-30T19:00:00",
-      "date_label": "30/09/2026 19:00",
-      "venue": "Díscola Records, Temuco",
-      "url": "https://portaldisc.com/evento/fonsoendiscolarecords",
-      "source": "PortalTicket"
-    },
-    {
-      "slug": "vamosandreaskemper",
-      "title": "¡VAMOS ANDREAS! EN EXPRESO IMAGINARIO, PEÑALOLÉN",
-      "start": "2026-10-04T17:00:00",
-      "date_label": "04/10/2026 17:00",
-      "venue": "Expreso Imaginario, Peñalolén",
-      "url": "https://portaldisc.com/evento/vamosandreaskemper",
-      "source": "PortalTicket"
-    },
-    {
-      "slug": "folkquilpue17deoctubre",
-      "title": "MONO GUITARRA, DOSIFA, FENÓMENO ZAMBELLI, MAI",
-      "start": "2026-10-17T17:00:00",
-      "date_label": "17/10/2026 17:00",
-      "venue": "Espacio Musa, Quilpué",
-      "url": "https://portaldisc.com/evento/folkquilpue17deoctubre",
-      "source": "PortalTicket"
-    },
-    {
-      "slug": "lanzamientoclipgenocidedown",
-      "title": "LANZAMIENTO CLIP GENOCIDE DOWN",
-      "start": "2026-10-17T20:00:00",
-      "date_label": "17/10/2026 20:00",
-      "venue": "MiBar, Providencia",
-      "url": "https://portaldisc.com/evento/lanzamientoclipgenocidedown",
+      "slug": "evelyncornejoenelquisco",
+      "title": "EVELYN CORNEJO EN EL QUISCO - CAFÉ ÑAÑITAS",
+      "start": "2026-10-02T20:30:00",
+      "date_label": "02/10/2026 20:30",
+      "venue": "Café Restaurant Ñañitas, El Quisco",
+      "url": "https://portaldisc.com/evento/evelyncornejoenelquisco",
       "source": "PortalTicket"
     },
     {

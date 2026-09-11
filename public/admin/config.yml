@@ -26,7 +26,7 @@ collections:
       - label: "Categoría"
         name: "categoria"
         widget: "select"
-        options: ["musica", "arte", "literatura", "fotografia", "columnas"]
+        options: ["musica", "arte", "literatura", "fotografia", "columnas", "cine"]
       - label: "Fecha"
         name: "fecha"
         widget: "datetime"
@@ -47,4 +47,5 @@ collections:
       - {label: "Ocultar portada", name: "ocultar_portada", widget: "boolean", default: false, required: false}
       - {label: "Ocultar resumen", name: "ocultar_resumen", widget: "boolean", default: false, required: false}
       - {label: "Ocultar autor", name: "ocultar_autor", widget: "boolean", default: true, required: false}
+      - {label: "Destacado", name: "destacado", widget: "boolean", default: false, required: false}
       - {label: "Cuerpo", name: "body", widget: "markdown"}

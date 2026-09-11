@@ -230,6 +230,31 @@ body {
   border-color: var(--accent);
 }
 
+/* Destacado: ocupa todo el ancho disponible */
+
+.tarjeta.destacado {
+  grid-column: 1 / -1;
+}
+
+.tarjeta.destacado .tarjeta-foto {
+  aspect-ratio: 16 / 7;
+}
+
+@media (min-width: 768px) {
+  .tarjeta.destacado .tarjeta-link {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+  .tarjeta.destacado .tarjeta-cuerpo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .tarjeta.destacado .tarjeta-titulo {
+    font-size: 1.5rem;
+  }
+}
+
 .tarjeta-link {
   text-decoration: none;
   color: inherit;

@@ -1,22 +1,40 @@
 {
-  "generated": "2026-09-11T13:09:14.948504",
+  "generated": "2026-09-14T11:12:07.890936",
   "sources": [
     "portqlticket",
     "cooperativa"
   ],
   "source_files": {
-    "portqlticket": "eventos_nuevos_20260911_0856.json",
+    "portqlticket": "eventos_nuevos_20260914_0857.json",
     "cooperativa": "cooperativa_conciertos_20260901_2013.json"
   },
-  "total_events": 69,
+  "total_events": 71,
   "events": [
     {
-      "slug": "evelyncornejoenelquisco",
-      "title": "EVELYN CORNEJO EN EL QUISCO - CAFÉ ÑAÑITAS",
-      "start": "2026-10-02T20:30:00",
-      "date_label": "02/10/2026 20:30",
-      "venue": "Café Restaurant Ñañitas, El Quisco",
-      "url": "https://portaldisc.com/evento/evelyncornejoenelquisco",
+      "slug": "showsecretoceleste",
+      "title": "SHOW SECRETO CELESTE",
+      "start": "2026-09-14T19:30:00",
+      "date_label": "14/09/2026 19:30",
+      "venue": "Espacio 56, Santiago Centro",
+      "url": "https://portaldisc.com/evento/showsecretoceleste",
+      "source": "PortalTicket"
+    },
+    {
+      "slug": "detardezinhavaivem",
+      "title": "DE TARDEZINHA - FIESTA VAI VEM EN GALERÍA TRINIDAD",
+      "start": "2026-09-27T18:00:00",
+      "date_label": "27/09/2026 18:00",
+      "venue": "Galería Trinidad, Santiago Centro",
+      "url": "https://portaldisc.com/evento/detardezinhavaivem",
+      "source": "PortalTicket"
+    },
+    {
+      "slug": "portaldisccomsolylluviaenpuentealto",
+      "title": "SOL Y LLUVIA EN TEATRO PALERMO DE PUENTE ALTO",
+      "start": "2026-11-07T19:00:00",
+      "date_label": "07/11/2026 19:00",
+      "venue": "Teatro Palermo, Puente Alto",
+      "url": "https://portaldisc.com/evento/portaldisccomsolylluviaenpuentealto",
       "source": "PortalTicket"
     },
     {

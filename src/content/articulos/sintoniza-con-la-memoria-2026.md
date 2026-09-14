@@ -8,7 +8,7 @@ resumen: null
 estado: publico
 ocultar_portada: "true"
 ocultar_resumen: "true"
-destacado: true
+destacado: false
 ---
 
 @youtube https://www.youtube.com/watch?v=VtB_UixZcuA

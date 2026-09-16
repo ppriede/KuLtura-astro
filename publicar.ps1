@@ -5,6 +5,7 @@
 #   -Deploy          : además, deploy manual a Cloudflare Pages
 #   -Force           : deploy manual aunque no haya cambios en dist/
 param(
+  [Alias("m")]
   [string]$Message,
   [switch]$Deploy,
   [switch]$Force

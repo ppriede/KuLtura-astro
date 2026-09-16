@@ -1,40 +1,94 @@
 {
-  "generated": "2026-09-14T11:12:07.890936",
+  "generated": "2026-09-16T11:19:34.850707",
   "sources": [
     "portqlticket",
     "cooperativa"
   ],
   "source_files": {
-    "portqlticket": "eventos_nuevos_20260914_0857.json",
+    "portqlticket": "eventos_nuevos_20260916_0940.json",
     "cooperativa": "cooperativa_conciertos_20260901_2013.json"
   },
-  "total_events": 71,
+  "total_events": 77,
   "events": [
     {
-      "slug": "showsecretoceleste",
-      "title": "SHOW SECRETO CELESTE",
-      "start": "2026-09-14T19:30:00",
-      "date_label": "14/09/2026 19:30",
-      "venue": "Espacio 56, Santiago Centro",
-      "url": "https://portaldisc.com/evento/showsecretoceleste",
+      "slug": "antifondanacional",
+      "title": "LA ANTIFONDA NACIONAL EN TEATRO FÁBRICA",
+      "start": "2026-09-19T19:30:00",
+      "date_label": "19/09/2026 19:30",
+      "venue": "Teatro Fábrica, Providencia",
+      "url": "https://portaldisc.com/evento/antifondanacional",
       "source": "PortalTicket"
     },
     {
-      "slug": "detardezinhavaivem",
-      "title": "DE TARDEZINHA - FIESTA VAI VEM EN GALERÍA TRINIDAD",
-      "start": "2026-09-27T18:00:00",
-      "date_label": "27/09/2026 18:00",
-      "venue": "Galería Trinidad, Santiago Centro",
-      "url": "https://portaldisc.com/evento/detardezinhavaivem",
+      "slug": "chanchoenpiedray31minutosenelaverno",
+      "title": "TRIO ACÚSTICO TRIBUTO A CHANCHO EN PIEDRA Y EXTRAS DE 31 MINUTOS EN EL AVERNO",
+      "start": "2026-09-23T20:30:00",
+      "date_label": "23/09/2026 20:30",
+      "venue": "El Averno, Concepción",
+      "url": "https://portaldisc.com/evento/chanchoenpiedray31minutosenelaverno",
       "source": "PortalTicket"
     },
     {
-      "slug": "portaldisccomsolylluviaenpuentealto",
-      "title": "SOL Y LLUVIA EN TEATRO PALERMO DE PUENTE ALTO",
-      "start": "2026-11-07T19:00:00",
-      "date_label": "07/11/2026 19:00",
-      "venue": "Teatro Palermo, Puente Alto",
-      "url": "https://portaldisc.com/evento/portaldisccomsolylluviaenpuentealto",
+      "slug": "primaverasaudade",
+      "title": "PRIMAVERA SAUDADE",
+      "start": "2026-10-01T20:00:00",
+      "date_label": "01/10/2026 20:00",
+      "venue": "Bar Liguria - Luis Thayer, Providencia",
+      "url": "https://portaldisc.com/evento/primaverasaudade",
+      "source": "PortalTicket"
+    },
+    {
+      "slug": "charocofrediadelamusica",
+      "title": "DÍA DE LA MÚSICA CHILENA CON CHARO COFRÉ Y SUS MUSICANTES",
+      "start": "2026-10-03T20:00:00",
+      "date_label": "03/10/2026 20:00",
+      "venue": "El Trompo con Riendas, Copiapó",
+      "url": "https://portaldisc.com/evento/charocofrediadelamusica",
+      "source": "PortalTicket"
+    },
+    {
+      "slug": "cadal-scdbellavista",
+      "title": "CADAL: LANZAMIENTO NUEVO SINGLE VENTANAS ROTAS - EN SALA SCD BELLAVISTA",
+      "start": "2026-10-03T20:00:00",
+      "date_label": "03/10/2026 20:00",
+      "venue": "Sala SCD Bellavista, Recoleta",
+      "url": "https://portaldisc.com/evento/cadal-scdbellavista",
+      "source": "PortalTicket"
+    },
+    {
+      "slug": "silviagaudineltangoesmujer",
+      "title": "EL TANGO ES MUJER SILVIA GAUDÍN, EN CASA JUANCHO.",
+      "start": "2026-10-03T20:30:00",
+      "date_label": "03/10/2026 20:30",
+      "venue": "Casa Juancho, Santiago Centro",
+      "url": "https://portaldisc.com/evento/silviagaudineltangoesmujer",
+      "source": "PortalTicket"
+    },
+    {
+      "slug": "fiskalesenvillarrica",
+      "title": "FISKALES EN VILLARRICA",
+      "start": "2026-10-10T21:00:00",
+      "date_label": "10/10/2026 21:00",
+      "venue": "Skol Resto Beer, Villarrica",
+      "url": "https://portaldisc.com/evento/fiskalesenvillarrica",
+      "source": "PortalTicket"
+    },
+    {
+      "slug": "proyectometamorfo",
+      "title": "METAMORFO VOL 2",
+      "start": "2026-10-17T19:00:00",
+      "date_label": "17/10/2026 19:00",
+      "venue": "MANDUCA, Santiago Centro",
+      "url": "https://portaldisc.com/evento/proyectometamorfo",
+      "source": "PortalTicket"
+    },
+    {
+      "slug": "hamburgorefugiodelsol",
+      "title": "HAMBURGO EN VIVO",
+      "start": "2026-10-17T21:00:00",
+      "date_label": "17/10/2026 21:00",
+      "venue": "Refugio del Sol, Peñalolén",
+      "url": "https://portaldisc.com/evento/hamburgorefugiodelsol",
       "source": "PortalTicket"
     },
     {

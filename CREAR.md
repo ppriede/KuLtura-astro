@@ -73,11 +73,9 @@ post: <categoria>, <título>, <URL>, autor: <nombre>, estado: <estado>
 
 6. **Verificar**: `npm run build`. Si `<slug>.md` ya existe, no sobreescribir — avisar.
 
-7. **Preguntar al usuario** si quiere publicar (commit + push). Si confirma, ejecutar:
-   ```
-   publicar.ps1 -Message "<título del artículo>"
-   ```
-   Si no, indicar que el artículo queda creado localmente y puede publicarse después.
+7. **No preguntar si quiere publicar**: el usuario decide cuándo publicar y lo hace él mismo
+   por línea de comando (`publicar.ps1 -m "<mensaje>"`). Solo reportar que el artículo quedó
+   creado localmente con build verificado.
 
 ## Notas
 

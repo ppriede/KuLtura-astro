@@ -1,49 +1,103 @@
 {
-  "generated": "2026-09-19T11:26:56.776105",
+  "generated": "2026-09-21T11:50:26.510210",
   "sources": [
     "portqlticket",
     "cooperativa"
   ],
   "source_files": {
-    "portqlticket": "eventos_nuevos_20260919_0942.json",
+    "portqlticket": "eventos_nuevos_20260921_0945.json",
     "cooperativa": "cooperativa_conciertos_20260901_2013.json"
   },
-  "total_events": 72,
+  "total_events": 78,
   "events": [
     {
-      "slug": "sansidesylasonoradelpg",
-      "title": "SANSIDES + LA SONORA DEL PG",
-      "start": "2026-09-26T22:00:00",
-      "date_label": "26/09/2026 22:00",
-      "venue": "Rincón Guachaca, Iquique",
-      "url": "https://portaldisc.com/evento/sansidesylasonoradelpg",
+      "slug": "elbotones",
+      "title": "TEATRO EN ROJAS PRESENTA: EL BOTONES",
+      "start": "2026-09-26T20:00:00",
+      "date_label": "26/09/2026 20:00",
+      "venue": "Centro Cultural Rojas Magallanes, La Florida",
+      "url": "https://portaldisc.com/evento/elbotones",
       "source": "PortalTicket"
     },
     {
-      "slug": "milenasalamancaensalamaster",
-      "title": "MILENA SALAMANCA EN VIVO EN SALA MASTER",
-      "start": "2026-10-01T19:30:00",
-      "date_label": "01/10/2026 19:30",
-      "venue": "Sala Master, Providencia",
-      "url": "https://portaldisc.com/evento/milenasalamancaensalamaster",
+      "slug": "losredslugarsecretoconcon",
+      "title": "LOS REDS EN CONCÓN",
+      "start": "2026-10-02T21:30:00",
+      "date_label": "02/10/2026 21:30",
+      "venue": "Lugar Secreto, Chile",
+      "url": "https://portaldisc.com/evento/losredslugarsecretoconcon",
       "source": "PortalTicket"
     },
     {
-      "slug": "residentevilenbar44v3",
-      "title": "RESIDENT EVIL EN BAR 44 V3",
+      "slug": "sab03octcassot",
+      "title": "FALSOCLUB | SAB 03 OCT | CASSOT BAR, VALPARAÍSO",
+      "start": "2026-10-03T19:00:00",
+      "date_label": "03/10/2026 19:00",
+      "venue": "Cassot Bar, Valparaíso",
+      "url": "https://portaldisc.com/evento/sab03octcassot",
+      "source": "PortalTicket"
+    },
+    {
+      "slug": "ntenvaldivia",
+      "title": "NIÑA TORMENTA EN VALDIVIA",
       "start": "2026-10-03T20:00:00",
       "date_label": "03/10/2026 20:00",
-      "venue": "Bar 44, Providencia",
-      "url": "https://portaldisc.com/evento/residentevilenbar44v3",
+      "venue": "Sidrería Señorita, Valdivia",
+      "url": "https://portaldisc.com/evento/ntenvaldivia",
       "source": "PortalTicket"
     },
     {
-      "slug": "pascualatriopichilemu2026",
-      "title": "PASCUALA ILABACA TRIO EN LOS PIURES, PICHILEMU",
-      "start": "2026-10-07T22:30:00",
-      "date_label": "07/10/2026 22:30",
-      "venue": "Los Piures Club Social, Pichilemu",
-      "url": "https://portaldisc.com/evento/pascualatriopichilemu2026",
+      "slug": "euphoriapartymonsterbullbar",
+      "title": "EUPHORIA PARTY (MONSTER BULL BAR)",
+      "start": "2026-10-03T22:00:00",
+      "date_label": "03/10/2026 22:00",
+      "venue": "Monster Kustom Bar, Temuco",
+      "url": "https://portaldisc.com/evento/euphoriapartymonsterbullbar",
+      "source": "PortalTicket"
+    },
+    {
+      "slug": "homenajepapposblues",
+      "title": "HOMENAJE A PAPPO'S BLUES",
+      "start": "2026-10-03T23:00:00",
+      "date_label": "03/10/2026 23:00",
+      "venue": "Poseidón Bar, Valparaíso",
+      "url": "https://portaldisc.com/evento/homenajepapposblues",
+      "source": "PortalTicket"
+    },
+    {
+      "slug": "ntentemuco",
+      "title": "NIÑA TORMENTA EN TEMUCO",
+      "start": "2026-10-04T16:00:00",
+      "date_label": "04/10/2026 16:00",
+      "venue": "Díscola Records, Temuco",
+      "url": "https://portaldisc.com/evento/ntentemuco",
+      "source": "PortalTicket"
+    },
+    {
+      "slug": "lagarrasiguevivaelmetalnomuere",
+      "title": "LA GARRA SIGUE VIVA, EL METAL NO MUERE! EN TEMPLO CRÁPULA, CONCEPCIÓN",
+      "start": "2026-10-23T19:00:00",
+      "date_label": "23/10/2026 19:00",
+      "venue": "Templo Crápula, Concepción",
+      "url": "https://portaldisc.com/evento/lagarrasiguevivaelmetalnomuere",
+      "source": "PortalTicket"
+    },
+    {
+      "slug": "catoni18mibar",
+      "title": "CATONI EN MI BAR",
+      "start": "2026-10-24T21:00:00",
+      "date_label": "24/10/2026 21:00",
+      "venue": "MiBar, Providencia",
+      "url": "https://portaldisc.com/evento/catoni18mibar",
+      "source": "PortalTicket"
+    },
+    {
+      "slug": "chaiseroom31oct2026",
+      "title": "CHAISENROOM | THE BEATIFUL PEOPLE, VALPARAÍSO",
+      "start": "2026-10-31T19:00:00",
+      "date_label": "31/10/2026 19:00",
+      "venue": "Emporio Echaurren, Valparaíso",
+      "url": "https://portaldisc.com/evento/chaiseroom31oct2026",
       "source": "PortalTicket"
     },
     {

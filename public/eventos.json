@@ -1,103 +1,616 @@
 {
-  "generated": "2026-09-21T12:00:31.799769",
+  "generated": "2026-09-25T12:49:38.659994",
   "sources": [
     "portqlticket",
     "cooperativa"
   ],
   "source_files": {
-    "portqlticket": "eventos_nuevos_20260921_0945.json",
+    "portqlticket": "eventos_nuevos_20260925_1030.json",
     "cooperativa": "cooperativa_conciertos_20260901_2013.json"
   },
-  "total_events": 78,
+  "total_events": 135,
   "events": [
     {
-      "slug": "elbotones",
-      "title": "TEATRO EN ROJAS PRESENTA: EL BOTONES",
-      "start": "2026-09-26T20:00:00",
-      "date_label": "26/09/2026 20:00",
-      "venue": "Centro Cultural Rojas Magallanes, La Florida",
-      "url": "https://portaldisc.com/evento/elbotones",
+      "slug": "sabadofestivaldeloscolores2026",
+      "title": "FESTIVAL DE LOS COLORES: SABADO 26 PRIMAVERA 2026 EN TRIBU RESTOBAR, QUILPUÉ",
+      "start": "2026-09-26T17:00:00",
+      "date_label": "26/09/2026 17:00",
+      "venue": "Tribu Quilpue, Quilpué",
+      "url": "https://portaldisc.com/evento/sabadofestivaldeloscolores2026",
       "source": "PortalTicket"
     },
     {
-      "slug": "losredslugarsecretoconcon",
-      "title": "LOS REDS EN CONCÓN",
-      "start": "2026-10-02T21:30:00",
-      "date_label": "02/10/2026 21:30",
-      "venue": "Lugar Secreto, Chile",
-      "url": "https://portaldisc.com/evento/losredslugarsecretoconcon",
+      "slug": "rebeatles26sept",
+      "title": "REBEATLES EN EL SANSEACABÓ!, TEMUCO",
+      "start": "2026-09-26T22:00:00",
+      "date_label": "26/09/2026 22:00",
+      "venue": "Sanseacabó!, Temuco",
+      "url": "https://portaldisc.com/evento/rebeatles26sept",
       "source": "PortalTicket"
     },
     {
-      "slug": "sab03octcassot",
-      "title": "FALSOCLUB | SAB 03 OCT | CASSOT BAR, VALPARAÍSO",
-      "start": "2026-10-03T19:00:00",
-      "date_label": "03/10/2026 19:00",
-      "venue": "Cassot Bar, Valparaíso",
-      "url": "https://portaldisc.com/evento/sab03octcassot",
+      "slug": "womanjazzengrez2",
+      "title": "WOMAN JAZZ EN GREZ",
+      "start": "2026-10-01T21:30:00",
+      "date_label": "01/10/2026 21:30",
+      "venue": "Bar Grez, Providencia",
+      "url": "https://portaldisc.com/evento/womanjazzengrez2",
       "source": "PortalTicket"
     },
     {
-      "slug": "ntenvaldivia",
-      "title": "NIÑA TORMENTA EN VALDIVIA",
+      "slug": "perdixenelsillon-",
+      "title": "PERDIX' EN EL SILLÓN EN ESPACIO VIEL",
+      "start": "2026-10-02T16:30:00",
+      "date_label": "02/10/2026 16:30",
+      "venue": "Espacio Viel, Santiago Centro",
+      "url": "https://portaldisc.com/evento/perdixenelsillon-",
+      "source": "PortalTicket"
+    },
+    {
+      "slug": "preescuchacatalejodiscolarecords",
+      "title": "COMEDOR PRE ESCUCHA NUEVO ÁLBUM: CATALEJO EN DÍSCOLA RECORDS, TEMUCO",
+      "start": "2026-10-02T18:30:00",
+      "date_label": "02/10/2026 18:30",
+      "venue": "Díscola Records, Temuco",
+      "url": "https://portaldisc.com/evento/preescuchacatalejodiscolarecords",
+      "source": "PortalTicket"
+    },
+    {
+      "slug": "conciertodemusicachilena1",
+      "title": "CONCIERTO DE MÚSICA CHILENA / ROBERTO BRAVO - VIERNES 02 DE OCTUBRE EN TEATRO MUNICIPAL DE LA FLORIDA",
+      "start": "2026-10-02T20:00:00",
+      "date_label": "02/10/2026 20:00",
+      "venue": "Teatro Municipal de La Florida, La Florida",
+      "url": "https://portaldisc.com/evento/conciertodemusicachilena1",
+      "source": "PortalTicket"
+    },
+    {
+      "slug": "tourcementeriocatolico02102026-historias",
+      "title": "TOUR EN EL CEMENTERIO CATÓLICO: HISTORIAS DEL CEMENTERIO CATÓLICO | EPISODIO I: EL ORIGEN - VIERNES 2 DE OCTUBRE DEL 2026 - 20:00 HORAS",
+      "start": "2026-10-02T20:00:00",
+      "date_label": "02/10/2026 20:00",
+      "venue": "Cementerio Católico, Recoleta",
+      "url": "https://portaldisc.com/evento/tourcementeriocatolico02102026-historias",
+      "source": "PortalTicket"
+    },
+    {
+      "slug": "02-10-cementerio-general-1821-el-origen-paranormal",
+      "title": "TOUR NOCTURNO CEMENTERIO GENERAL: 1821 EL ORIGEN - VIERNES 2 DE OCTUBRE DEL 2026 - 20:15 HORAS",
+      "start": "2026-10-02T20:15:00",
+      "date_label": "02/10/2026 20:15",
+      "venue": "Cementerio General (Entrada por Recoleta), Recoleta",
+      "url": "https://portaldisc.com/evento/02-10-cementerio-general-1821-el-origen-paranormal",
+      "source": "PortalTicket"
+    },
+    {
+      "slug": "estoesamor-chillan-2octubre",
+      "title": "CHRIS-NEY Y BARNACHEA PROJECT PRESENTAN ESTO ES AMOR EN PANITAO, CHILLáN",
+      "start": "2026-10-02T20:30:00",
+      "date_label": "02/10/2026 20:30",
+      "venue": "PANITAO, Chillán",
+      "url": "https://portaldisc.com/evento/estoesamor-chillan-2octubre",
+      "source": "PortalTicket"
+    },
+    {
+      "slug": "02-10-26-cementerio-investigacion-paranormal-vesti",
+      "title": "TOUR NOCTURNO EN CEMENTERIO GENERAL: VESTIGIOS PARANORMALES - VIERNES 2 DE OCTUBRE DEL 2026 - 21:00 HORAS",
+      "start": "2026-10-02T21:00:00",
+      "date_label": "02/10/2026 21:00",
+      "venue": "Cementerio General (Entrada por Recoleta), Recoleta",
+      "url": "https://portaldisc.com/evento/02-10-26-cementerio-investigacion-paranormal-vesti",
+      "source": "PortalTicket"
+    },
+    {
+      "slug": "payayfreestyle",
+      "title": "PAYA Y FREESTYLE EN BAR CANTARES",
+      "start": "2026-10-02T22:00:00",
+      "date_label": "02/10/2026 22:00",
+      "venue": "Bar Cantares, Providencia",
+      "url": "https://portaldisc.com/evento/payayfreestyle",
+      "source": "PortalTicket"
+    },
+    {
+      "slug": "conciertodemusicachilena2",
+      "title": "CONCIERTO DE MÚSICA CHILENA / ROBERTO BRAVO - SÁBADO 03 DE OCTUBRE EN TEATRO MUNICIPAL DE LA FLORIDA",
       "start": "2026-10-03T20:00:00",
       "date_label": "03/10/2026 20:00",
-      "venue": "Sidrería Señorita, Valdivia",
-      "url": "https://portaldisc.com/evento/ntenvaldivia",
+      "venue": "Teatro Municipal de La Florida, La Florida",
+      "url": "https://portaldisc.com/evento/conciertodemusicachilena2",
       "source": "PortalTicket"
     },
     {
-      "slug": "euphoriapartymonsterbullbar",
-      "title": "EUPHORIA PARTY (MONSTER BULL BAR)",
+      "slug": "tourcementeriocatolico03102026-historias",
+      "title": "TOUR EN EL CEMENTERIO CATÓLICO: HISTORIAS DEL CEMENTERIO CATÓLICO | EPISODIO I: EL ORIGEN - SABADO 03 DE OCTUBRE DEL 2026 - 20:00 HORAS",
+      "start": "2026-10-03T20:00:00",
+      "date_label": "03/10/2026 20:00",
+      "venue": "Cementerio Católico, Recoleta",
+      "url": "https://portaldisc.com/evento/tourcementeriocatolico03102026-historias",
+      "source": "PortalTicket"
+    },
+    {
+      "slug": "sabadosgargoleros18chico",
+      "title": "18 CHICO: A CUEQUEAR CON LAS COMAIRES",
+      "start": "2026-10-03T20:30:00",
+      "date_label": "03/10/2026 20:30",
+      "venue": "Espacio Gárgola, Santiago Centro",
+      "url": "https://portaldisc.com/evento/sabadosgargoleros18chico",
+      "source": "PortalTicket"
+    },
+    {
+      "slug": "03-10-26-cementerio-investigacion-paranormal-vesti",
+      "title": "TOUR NOCTURNO EN CEMENTERIO GENERAL: VESTIGIOS PARANORMALES - SABADO 3 DE OCTUBRE DEL 2026 - 21:00 HORAS",
+      "start": "2026-10-03T21:00:00",
+      "date_label": "03/10/2026 21:00",
+      "venue": "Cementerio General (Entrada por Recoleta), Recoleta",
+      "url": "https://portaldisc.com/evento/03-10-26-cementerio-investigacion-paranormal-vesti",
+      "source": "PortalTicket"
+    },
+    {
+      "slug": "miltamboresenclubsegundopiso",
+      "title": "FIESTA OFICIAL MIL TAMBORES EN CLUB SEGUNDO PISO, VALPARAÍSO",
       "start": "2026-10-03T22:00:00",
       "date_label": "03/10/2026 22:00",
-      "venue": "Monster Kustom Bar, Temuco",
-      "url": "https://portaldisc.com/evento/euphoriapartymonsterbullbar",
+      "venue": "Club Segundo Piso, Valparaíso",
+      "url": "https://portaldisc.com/evento/miltamboresenclubsegundopiso",
       "source": "PortalTicket"
     },
     {
-      "slug": "homenajepapposblues",
-      "title": "HOMENAJE A PAPPO'S BLUES",
-      "start": "2026-10-03T23:00:00",
-      "date_label": "03/10/2026 23:00",
-      "venue": "Poseidón Bar, Valparaíso",
-      "url": "https://portaldisc.com/evento/homenajepapposblues",
-      "source": "PortalTicket"
-    },
-    {
-      "slug": "ntentemuco",
-      "title": "NIÑA TORMENTA EN TEMUCO",
+      "slug": "papanegro-diadelamusicascd2",
+      "title": "PAPANEGRO: DÍA DE LA MÚSICA EN SALA SCD EGAÑA - 16 HRS",
       "start": "2026-10-04T16:00:00",
       "date_label": "04/10/2026 16:00",
-      "venue": "Díscola Records, Temuco",
-      "url": "https://portaldisc.com/evento/ntentemuco",
+      "venue": "Sala SCD Egaña, La Reina",
+      "url": "https://portaldisc.com/evento/papanegro-diadelamusicascd2",
       "source": "PortalTicket"
     },
     {
-      "slug": "lagarrasiguevivaelmetalnomuere",
-      "title": "LA GARRA SIGUE VIVA, EL METAL NO MUERE! EN TEMPLO CRÁPULA, CONCEPCIÓN",
-      "start": "2026-10-23T19:00:00",
-      "date_label": "23/10/2026 19:00",
+      "slug": "07-10-26-cementerio-investigacion-paranormal-1945",
+      "title": "TOUR NOCTURNO EN CEMENTERIO GENERAL: ENCERRADOS PARTE I: EXPEDICIÓN PARANORMAL PREMIUM - SABADO 26 DE SEPTIEMBRE DEL 2026 - 22:30 HORAS",
+      "start": "2026-10-07T20:30:00",
+      "date_label": "07/10/2026 20:30",
+      "venue": "Cementerio General (Entrada por Recoleta), Recoleta",
+      "url": "https://portaldisc.com/evento/07-10-26-cementerio-investigacion-paranormal-1945",
+      "source": "PortalTicket"
+    },
+    {
+      "slug": "jovenespianistasoctubre26",
+      "title": "JÓVENES PIANISTAS - JUEVES 08 DE OCTUBRE EN TEATRO MUNICIPAL DE LA FLORIDA",
+      "start": "2026-10-08T20:00:00",
+      "date_label": "08/10/2026 20:00",
+      "venue": "Teatro Municipal de La Florida, La Florida",
+      "url": "https://portaldisc.com/evento/jovenespianistasoctubre26",
+      "source": "PortalTicket"
+    },
+    {
+      "slug": "brunobastian",
+      "title": "BRUNO BASTIÁN EN EL MESÓN NERUDIANO",
+      "start": "2026-10-08T20:30:00",
+      "date_label": "08/10/2026 20:30",
+      "venue": "El Mesón Nerudiano, Recoleta",
+      "url": "https://portaldisc.com/evento/brunobastian",
+      "source": "PortalTicket"
+    },
+    {
+      "slug": "guerobrown",
+      "title": "GÜERO BROWN EN BAR DE RENÉ",
+      "start": "2026-10-08T21:30:00",
+      "date_label": "08/10/2026 21:30",
+      "venue": "Bar de René, Providencia",
+      "url": "https://portaldisc.com/evento/guerobrown",
+      "source": "PortalTicket"
+    },
+    {
+      "slug": "teatrolaremoliendaencasablanca",
+      "title": "LA REMOLIENDA: LA ORIGINARIA TEATRO - ANIVERSARIO TEATRO MUNICIPAL DE CASABLANCA",
+      "start": "2026-10-09T19:00:00",
+      "date_label": "09/10/2026 19:00",
+      "venue": "Teatro Municipal de Casablanca, Casablanca",
+      "url": "https://portaldisc.com/evento/teatrolaremoliendaencasablanca",
+      "source": "PortalTicket"
+    },
+    {
+      "slug": "benjaminwalkerenvina",
+      "title": "BENJAMÍN WALKER: SHOW ÍNTIMO EN VIÑA DEL MAR",
+      "start": "2026-10-09T19:30:00",
+      "date_label": "09/10/2026 19:30",
+      "venue": "El Pasaje, Viña del Mar",
+      "url": "https://portaldisc.com/evento/benjaminwalkerenvina",
+      "source": "PortalTicket"
+    },
+    {
+      "slug": "homenajealanuevaola1",
+      "title": "HOMENAJE A LA NUEVA OLA - VIERNES 09 DE OCTUBRE EN TEATRO MUNICIPAL DE LA FLORIDA",
+      "start": "2026-10-09T20:00:00",
+      "date_label": "09/10/2026 20:00",
+      "venue": "Teatro Municipal de La Florida, La Florida",
+      "url": "https://portaldisc.com/evento/homenajealanuevaola1",
+      "source": "PortalTicket"
+    },
+    {
+      "slug": "9deoctubrelajuguera",
+      "title": "CORRIENTE CONTINUA + TODAS LAS CALLES LLEVAN TU NOMBRE + LAS ADICCIONES DE MIS AMIGOS EN LA JUGUERA",
+      "start": "2026-10-09T20:30:00",
+      "date_label": "09/10/2026 20:30",
+      "venue": "La Juguera Espacio Cultural, Santiago Centro",
+      "url": "https://portaldisc.com/evento/9deoctubrelajuguera",
+      "source": "PortalTicket"
+    },
+    {
+      "slug": "policeinxs09octubre2026",
+      "title": "THE POLICE VS INXS EN BIKER CHOP",
+      "start": "2026-10-09T22:00:00",
+      "date_label": "09/10/2026 22:00",
+      "venue": "Biker Chop, Pedro Aguirre Cerda",
+      "url": "https://portaldisc.com/evento/policeinxs09octubre2026",
+      "source": "PortalTicket"
+    },
+    {
+      "slug": "feriadescubriendoconocimientos2026",
+      "title": "FERIA DESCUBRIENDO CONOCIMIENTOS 2026 EN CASA CENTRAL UNIVERSIDAD DE CHILE",
+      "start": "2026-10-10T09:30:00",
+      "date_label": "10/10/2026 09:30",
+      "venue": "Casa Central de la Universidad de Chile, Santiago Centro",
+      "url": "https://portaldisc.com/evento/feriadescubriendoconocimientos2026",
+      "source": "PortalTicket"
+    },
+    {
+      "slug": "valentinaylosdelmarpaguershanitokilombo",
+      "title": "VALENTINA Y LOS DEL MAR Y PAGUER SHANITO EN KILOMBO RESTOBAR",
+      "start": "2026-10-10T20:00:00",
+      "date_label": "10/10/2026 20:00",
+      "venue": "Kilombo Bar , Santiago Centro",
+      "url": "https://portaldisc.com/evento/valentinaylosdelmarpaguershanitokilombo",
+      "source": "PortalTicket"
+    },
+    {
+      "slug": "homenajealanuevaola2",
+      "title": "HOMENAJE A LA NUEVA OLA - SÁBADO 10 DE OCTUBRE EN TEATRO MUNICIPAL DE LA FLORIDA",
+      "start": "2026-10-10T20:00:00",
+      "date_label": "10/10/2026 20:00",
+      "venue": "Teatro Municipal de La Florida, La Florida",
+      "url": "https://portaldisc.com/evento/homenajealanuevaola2",
+      "source": "PortalTicket"
+    },
+    {
+      "slug": "pablovialyfelipecollarte",
+      "title": "PABLO VIAL Y FELIPE COLLARTE EN CONCIERTO",
+      "start": "2026-10-10T21:00:00",
+      "date_label": "10/10/2026 21:00",
+      "venue": "BarZuo, Ñuñoa",
+      "url": "https://portaldisc.com/evento/pablovialyfelipecollarte",
+      "source": "PortalTicket"
+    },
+    {
+      "slug": "blackmusicpullay",
+      "title": "DJ SAULO + DJ ROCATOWN EN SALON VERDE PULLAY, COBQUECURA",
+      "start": "2026-10-10T21:00:00",
+      "date_label": "10/10/2026 21:00",
+      "venue": "Salon Verde, Cobquecura",
+      "url": "https://portaldisc.com/evento/blackmusicpullay",
+      "source": "PortalTicket"
+    },
+    {
+      "slug": "kahuin10octubre",
+      "title": "TRIBUTO A SODA STEREO CON AGITA ALMAS - SÁBADO 10 OCTUBRE",
+      "start": "2026-10-10T21:30:00",
+      "date_label": "10/10/2026 21:30",
+      "venue": "Kahuin, Peñalolén",
+      "url": "https://portaldisc.com/evento/kahuin10octubre",
+      "source": "PortalTicket"
+    },
+    {
+      "slug": "visions",
+      "title": "VISIONS EN ESTACION BÜNEMANN",
+      "start": "2026-10-10T22:00:00",
+      "date_label": "10/10/2026 22:00",
+      "venue": "Estación Bünemann, Valdivia",
+      "url": "https://portaldisc.com/evento/visions",
+      "source": "PortalTicket"
+    },
+    {
+      "slug": "nochedebossaympb4",
+      "title": "NOCHE DE BOSSA & MPB EN PECES DE CIUDAD",
+      "start": "2026-10-11T20:00:00",
+      "date_label": "11/10/2026 20:00",
+      "venue": "Peces de Ciudad, Providencia",
+      "url": "https://portaldisc.com/evento/nochedebossaympb4",
+      "source": "PortalTicket"
+    },
+    {
+      "slug": "spiderscasabirra",
+      "title": "SPIDERS: TRIBUTO A SYSTEM OF A DOWN EN VASA BIRRA, TEMUCO",
+      "start": "2026-10-13T20:30:00",
+      "date_label": "13/10/2026 20:30",
+      "venue": "Casa Birra, Temuco",
+      "url": "https://portaldisc.com/evento/spiderscasabirra",
+      "source": "PortalTicket"
+    },
+    {
+      "slug": "pgsvrck",
+      "title": "NEFTALINAS + PATETICA ETICA + SEMINARIO + TOUX EN CAJACÚSTICA",
+      "start": "2026-10-15T16:00:00",
+      "date_label": "15/10/2026 16:00",
+      "venue": "Cajacústica, Santiago Centro",
+      "url": "https://portaldisc.com/evento/pgsvrck",
+      "source": "PortalTicket"
+    },
+    {
+      "slug": "festivaldeorquestas2026-1",
+      "title": "FESTIVAL DE ORQUESTAS - VIERNES 16 DE OCTUBRE EN TEATRO MUNICIPAL DE LA FLORIDA",
+      "start": "2026-10-16T16:00:00",
+      "date_label": "16/10/2026 16:00",
+      "venue": "Teatro Municipal de La Florida, La Florida",
+      "url": "https://portaldisc.com/evento/festivaldeorquestas2026-1",
+      "source": "PortalTicket"
+    },
+    {
+      "slug": "supersplit2",
+      "title": "SUPER SPLIT EN PANIC HOUSE, VALPARAÍSO",
+      "start": "2026-10-16T16:00:00",
+      "date_label": "16/10/2026 16:00",
+      "venue": "Panic House, Valparaíso",
+      "url": "https://portaldisc.com/evento/supersplit2",
+      "source": "PortalTicket"
+    },
+    {
+      "slug": "attaque77stonetemplepilotsunplugged",
+      "title": "TRIBUTO ATTAQUE 77 + STONE TEMPLE PILOTS UNPLUGGED EN 12 LUNAS RESTOBAR, LA SERENA",
+      "start": "2026-10-16T21:30:00",
+      "date_label": "16/10/2026 21:30",
+      "venue": "12 Lunas Restobar, La Serena",
+      "url": "https://portaldisc.com/evento/attaque77stonetemplepilotsunplugged",
+      "source": "PortalTicket"
+    },
+    {
+      "slug": "milsonrisaspormawen",
+      "title": "MIL SONRISAS POR MAWEN EN AUDITORIO LUKSIC",
+      "start": "2026-10-17T16:00:00",
+      "date_label": "17/10/2026 16:00",
+      "venue": "Auditorio Luksic, Campus San Joaquín UC, Macul",
+      "url": "https://portaldisc.com/evento/milsonrisaspormawen",
+      "source": "PortalTicket"
+    },
+    {
+      "slug": "festivaldeorquestas2026-2",
+      "title": "FESTIVAL DE ORQUESTAS - SÁBADO 17 DE OCTUBRE EN TEATRO MUNICIPAL DE LA FLORIDA",
+      "start": "2026-10-17T20:00:00",
+      "date_label": "17/10/2026 20:00",
+      "venue": "Teatro Municipal de La Florida, La Florida",
+      "url": "https://portaldisc.com/evento/festivaldeorquestas2026-2",
+      "source": "PortalTicket"
+    },
+    {
+      "slug": "camilamorenolaultimaluzenteatromauri",
+      "title": "CAMILA MORENO: LA ULTIMA LUZ EN TEATRO MAURI SCD VALPARAISO",
+      "start": "2026-10-17T20:00:00",
+      "date_label": "17/10/2026 20:00",
+      "venue": "Teatro Mauri SCD, Valparaíso",
+      "url": "https://portaldisc.com/evento/camilamorenolaultimaluzenteatromauri",
+      "source": "PortalTicket"
+    },
+    {
+      "slug": "benjaminwalkerenvaldi",
+      "title": "BENJAMÍN WALKER: SHOW ÍNTIMO EN VALDIVIA",
+      "start": "2026-10-17T22:30:00",
+      "date_label": "17/10/2026 22:30",
+      "venue": "La Bota Cervecera, Valdivia",
+      "url": "https://portaldisc.com/evento/benjaminwalkerenvaldi",
+      "source": "PortalTicket"
+    },
+    {
+      "slug": "katarymaestravida",
+      "title": "KATARY EN MAESTRA VIDA",
+      "start": "2026-10-21T22:30:00",
+      "date_label": "21/10/2026 22:30",
+      "venue": "Maestra Vida, Recoleta",
+      "url": "https://portaldisc.com/evento/katarymaestravida",
+      "source": "PortalTicket"
+    },
+    {
+      "slug": "tedxsantiagosalnserplaneta-scdegana",
+      "title": "TEDXSANTIAGO SALÓN · SER PLANETA EN SALA SCD EGAÑA",
+      "start": "2026-10-22T19:30:00",
+      "date_label": "22/10/2026 19:30",
+      "venue": "Sala SCD Egaña, La Reina",
+      "url": "https://portaldisc.com/evento/tedxsantiagosalnserplaneta-scdegana",
+      "source": "PortalTicket"
+    },
+    {
+      "slug": "almaadentroenteatromauriscdvalparaiso",
+      "title": "ALMA ADENTRO EN TEATRO MAURI SCD, VALPARAÍSO",
+      "start": "2026-10-22T20:00:00",
+      "date_label": "22/10/2026 20:00",
+      "venue": "Teatro Mauri SCD, Valparaíso",
+      "url": "https://portaldisc.com/evento/almaadentroenteatromauriscdvalparaiso",
+      "source": "PortalTicket"
+    },
+    {
+      "slug": "cuandolashojassecovniertanenpolvo",
+      "title": "CUANDO LAS HOJAS SE CONVIERTEN EN POLVO: TEATRO Y MÚSICA EN VIVO",
+      "start": "2026-10-24T17:30:00",
+      "date_label": "24/10/2026 17:30",
+      "venue": "CENTRARTE, Estación Central",
+      "url": "https://portaldisc.com/evento/cuandolashojassecovniertanenpolvo",
+      "source": "PortalTicket"
+    },
+    {
+      "slug": "profondosinohayotra",
+      "title": "TOCATA PROFONDOS",
+      "start": "2026-10-24T17:30:00",
+      "date_label": "24/10/2026 17:30",
+      "venue": "SUPREMO SPORT BAR, Puerto Montt",
+      "url": "https://portaldisc.com/evento/profondosinohayotra",
+      "source": "PortalTicket"
+    },
+    {
+      "slug": "lanzamientofranciscokamei",
+      "title": "FRANCISCO KAMEI EN JARDIN DE GENTE",
+      "start": "2026-10-24T19:00:00",
+      "date_label": "24/10/2026 19:00",
+      "venue": "Jardín de Gente Café & Espacio Cultural, Santiago Centro",
+      "url": "https://portaldisc.com/evento/lanzamientofranciscokamei",
+      "source": "PortalTicket"
+    },
+    {
+      "slug": "surventograficapopular",
+      "title": "SURVENTO EN GRAFICA POPULAR",
+      "start": "2026-10-24T20:30:00",
+      "date_label": "24/10/2026 20:30",
+      "venue": "Gráfica Popular, Santiago Centro",
+      "url": "https://portaldisc.com/evento/surventograficapopular",
+      "source": "PortalTicket"
+    },
+    {
+      "slug": "kahuin24octubre",
+      "title": "KAHUIN PRESENTA: HENDRIX EXPERIENCE",
+      "start": "2026-10-24T21:30:00",
+      "date_label": "24/10/2026 21:30",
+      "venue": "Kahuin, Peñalolén",
+      "url": "https://portaldisc.com/evento/kahuin24octubre",
+      "source": "PortalTicket"
+    },
+    {
+      "slug": "travelriffbar",
+      "title": "TRAVEL: TRIBUTO A JOURNEY EN RIFF BAR, LOS ANGELES",
+      "start": "2026-10-24T22:00:00",
+      "date_label": "24/10/2026 22:00",
+      "venue": "Riff Bar, Los Ángeles",
+      "url": "https://portaldisc.com/evento/travelriffbar",
+      "source": "PortalTicket"
+    },
+    {
+      "slug": "casi-halloween",
+      "title": "TOCATA (CASI) HALLOWEEN EN CAJACÚSTICA",
+      "start": "2026-10-25T17:00:00",
+      "date_label": "25/10/2026 17:00",
+      "venue": "Cajacústica, Santiago Centro",
+      "url": "https://portaldisc.com/evento/casi-halloween",
+      "source": "PortalTicket"
+    },
+    {
+      "slug": "bomdestinorefugiodelsol",
+      "title": "BOM DESTINO CHORO BRASILEÑO CANTADO",
+      "start": "2026-10-25T19:00:00",
+      "date_label": "25/10/2026 19:00",
+      "venue": "Refugio del Sol, Peñalolén",
+      "url": "https://portaldisc.com/evento/bomdestinorefugiodelsol",
+      "source": "PortalTicket"
+    },
+    {
+      "slug": "orquestamargamargasinfonian3enteatromauri",
+      "title": "ORQUESTA MARGA MARGA: SINFONIA N°3 EN TEATRO MAURI SCD, VALPARAISO",
+      "start": "2026-10-29T19:00:00",
+      "date_label": "29/10/2026 19:00",
+      "venue": "Teatro Mauri SCD, Valparaíso",
+      "url": "https://portaldisc.com/evento/orquestamargamargasinfonian3enteatromauri",
+      "source": "PortalTicket"
+    },
+    {
+      "slug": "experienciagospelnight",
+      "title": "EXPERIENCIA GOSPEL NIGHT EN TEMPLO CRÁPULA, CONCEPCIÓN",
+      "start": "2026-10-29T21:00:00",
+      "date_label": "29/10/2026 21:00",
       "venue": "Templo Crápula, Concepción",
-      "url": "https://portaldisc.com/evento/lagarrasiguevivaelmetalnomuere",
+      "url": "https://portaldisc.com/evento/experienciagospelnight",
       "source": "PortalTicket"
     },
     {
-      "slug": "catoni18mibar",
-      "title": "CATONI EN MI BAR",
-      "start": "2026-10-24T21:00:00",
-      "date_label": "24/10/2026 21:00",
-      "venue": "MiBar, Providencia",
-      "url": "https://portaldisc.com/evento/catoni18mibar",
+      "slug": "ondafiestaderadioedelweisscoyhaique",
+      "title": "ONDA FIESTA DE RADIO EDELWEISS, COYHAIQUE",
+      "start": "2026-10-30T22:00:00",
+      "date_label": "30/10/2026 22:00",
+      "venue": "Club de Huasos Coyhaique, Coyhaique",
+      "url": "https://portaldisc.com/evento/ondafiestaderadioedelweisscoyhaique",
       "source": "PortalTicket"
     },
     {
-      "slug": "chaiseroom31oct2026",
-      "title": "CHAISENROOM | THE BEATIFUL PEOPLE, VALPARAÍSO",
+      "slug": "solylluvia-antologiaenteatromauriscd",
+      "title": "SOL Y LLUVIA: ANTOLOGIA EN TEATRO MAURI SCD, VALPARAÍSO",
       "start": "2026-10-31T19:00:00",
       "date_label": "31/10/2026 19:00",
-      "venue": "Emporio Echaurren, Valparaíso",
-      "url": "https://portaldisc.com/evento/chaiseroom31oct2026",
+      "venue": "Teatro Mauri SCD, Valparaíso",
+      "url": "https://portaldisc.com/evento/solylluvia-antologiaenteatromauriscd",
+      "source": "PortalTicket"
+    },
+    {
+      "slug": "ondafiestaderadioedelweissaysen",
+      "title": "ONDA FIESTA DE RADIO EDELWEISS, AYSEN",
+      "start": "2026-10-31T22:00:00",
+      "date_label": "31/10/2026 22:00",
+      "venue": "Club de Huasos, Aysén",
+      "url": "https://portaldisc.com/evento/ondafiestaderadioedelweissaysen",
+      "source": "PortalTicket"
+    },
+    {
+      "slug": "cumpleanosepamoya",
+      "title": "CUMPLEAÑOS 25 DE SEPAMOYA EN DONDE FARFAN",
+      "start": "2026-11-06T20:30:00",
+      "date_label": "06/11/2026 20:30",
+      "venue": "CENTRO DE EVENTOS DONDE FARFAN, Quinta Normal",
+      "url": "https://portaldisc.com/evento/cumpleanosepamoya",
+      "source": "PortalTicket"
+    },
+    {
+      "slug": "sonidostornasol2026",
+      "title": "SONIDOS TORNASOL 2026 EN BANDERA 1001",
+      "start": "2026-11-07T17:30:00",
+      "date_label": "07/11/2026 17:30",
+      "venue": "Bandera 1001, Concepción",
+      "url": "https://portaldisc.com/evento/sonidostornasol2026",
+      "source": "PortalTicket"
+    },
+    {
+      "slug": "pasarelamodacl",
+      "title": "GALA DEL DISEÑO CHILENO 2026 EN CLUB DE LA UNIÓN - 9 DE NOVIEMBRE",
+      "start": "2026-11-09T19:30:00",
+      "date_label": "09/11/2026 19:30",
+      "venue": "Club de la Unión, Santiago Centro",
+      "url": "https://portaldisc.com/evento/pasarelamodacl",
+      "source": "PortalTicket"
+    },
+    {
+      "slug": "10noviembreclandestina",
+      "title": "MR. TAPP EN VIVO EN COCINA CLANDESTINA ⚡",
+      "start": "2026-11-10T20:30:00",
+      "date_label": "10/11/2026 20:30",
+      "venue": "Cocina Clandestina, Providencia",
+      "url": "https://portaldisc.com/evento/10noviembreclandestina",
+      "source": "PortalTicket"
+    },
+    {
+      "slug": "pasarela11denoviembre",
+      "title": "PASARELA MODA SANTIAGO 2026 EN CLUB DE LA UNIÓN - 11 DE NOVIEMBRE",
+      "start": "2026-11-11T19:30:00",
+      "date_label": "11/11/2026 19:30",
+      "venue": "Club de la Unión, Santiago Centro",
+      "url": "https://portaldisc.com/evento/pasarela11denoviembre",
+      "source": "PortalTicket"
+    },
+    {
+      "slug": "pasarelamoda12noviembre",
+      "title": "PASARELA MODA SANTIAGO 2026 EN CLUB DE LA UNIÓN - 12 DE NOVIEMBRE",
+      "start": "2026-11-12T19:30:00",
+      "date_label": "12/11/2026 19:30",
+      "venue": "Club de la Unión, Santiago Centro",
+      "url": "https://portaldisc.com/evento/pasarelamoda12noviembre",
+      "source": "PortalTicket"
+    },
+    {
+      "slug": "queseacabeelmundo",
+      "title": "QUE SE ACABE EL MUNDO EN EL SÓTANO",
+      "start": "2026-11-15T17:00:00",
+      "date_label": "15/11/2026 17:00",
+      "venue": "El Sótano, Santiago Centro",
+      "url": "https://portaldisc.com/evento/queseacabeelmundo",
+      "source": "PortalTicket"
+    },
+    {
+      "slug": "kahuin21noviembre",
+      "title": "KAHUIN PRESENTA: MAGDALENA MATTHEY & ELIZABETH MORRIS",
+      "start": "2026-11-21T21:30:00",
+      "date_label": "21/11/2026 21:30",
+      "venue": "Kahuin, Peñalolén",
+      "url": "https://portaldisc.com/evento/kahuin21noviembre",
       "source": "PortalTicket"
     },
     {
